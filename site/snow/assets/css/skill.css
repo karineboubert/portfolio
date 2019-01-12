@@ -1,0 +1,96 @@
+body{
+    padding: 0;
+    margin: 0;
+
+    background-color:#F5F5F5;
+}
+
+a{
+    color: rgba(0,0,0,.5);
+}
+
+#logo{
+    width: 70%;
+    height:30%;
+}
+
+.nav-home{
+    color:black;
+}
+
+
+.secondpicture{
+    height: 403px;
+}
+
+.skills{
+    height:350px;
+}
+
+.thirdpicture{
+    margin: 0 80px;
+}
+
+.image{
+    width: 100%;
+    margin-bottom: 35px;
+}
+
+.littlepicture{
+    height: 250px;
+}
+
+.mediumpicture{
+    height: 527px;
+}
+
+.image:hover{
+    -moz-box-shadow: 0 0 20px #ccc;
+    -webkit-box-shadow: 0 0 20px #ccc;
+    box-shadow: 0 0 20px #ccc;
+}
+
+.margeplus{
+    margin: 50px 80px;
+}
+
+.icons{
+    margin-left: 5%;
+    font-size: 25px;
+}
+
+@media all and (max-width:770px)
+{
+    .skills{
+        height:200px;
+    }
+
+    .copyright {
+        font-size: 90%;
+    }
+
+}
+
+@media all and (max-width:425px)
+{
+    .nopadding{
+        padding: 0;
+        margin: 0;
+    }
+    .image{
+        margin-bottom: 10px;
+    }
+    .copyright{
+        font-size: 80%;
+        display: flex;
+        justify-content: center;
+    }
+    .margeplus{
+        margin: 20px 30px;
+    }
+
+    .icons{
+        margin-left: 7%;
+        font-size: 27px;
+    }
+}

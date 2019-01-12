@@ -1,0 +1,108 @@
+.nomargin {
+  margin: 0; }
+
+.nopadding {
+  padding: 0; }
+
+.padding {
+  padding: 40px 0; }
+
+.banner {
+  background-color: black;
+  padding: 15px 20px;
+  font-weight: 600;
+  color: white; }
+
+.borderBlack {
+  border: 3px solid black; }
+
+.center {
+  text-align: center; }
+
+.bold {
+  font-weight: 600;
+  color: black; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif; }
+
+#bg_image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 220px;
+  width: 95%;
+  border: 3px solid black;
+  margin: 10px 10px; }
+
+.titleBlack {
+  color: black; }
+
+.whiteCard {
+  background-color: white;
+  filter: opacity(95%);
+  border-radius: 5px;
+  padding: 20px 30px; }
+
+.topic {
+  background-color: #D1D1CF;
+  border: 2px solid black; }
+
+.blackButton {
+  background-color: black;
+  border: black;
+  border-radius: 3px;
+  padding: 10px 30px;
+  color: white;
+  padding: 10px 20px; }
+
+.marginTopic {
+  margin: 50px 0; }
+
+.bg_grey {
+  background-color: #D1D1CF; }
+
+.bg_white {
+  background-color: white; }
+
+.bg_breadcrumb {
+  background-color: #f9f9f9; }
+
+.separation {
+  border: 1px solid black; }
+
+.borderComments {
+  border: 3px solid black;
+  margin: 40px; }
+
+.whiteCardCategory {
+  background-color: white;
+  filter: opacity(95%);
+  border-radius: 5px;
+  padding: 20px;
+  margin: 70px 20px; }
+
+@media (min-width: 1700px) {
+  #bg_image {
+    height: 340px; }
+
+  .whiteCard {
+    background-color: white;
+    filter: opacity(95%);
+    border-radius: 5px;
+    padding: 50px 60px; }
+
+  .whiteCardCategory {
+    margin: 140px 20px; } }
+@media all and (max-width: 1024px) {
+  .whiteCard {
+    padding: 20px 15px; } }
+@media all and (max-width: 1000px) {
+  #bg_image {
+    display: none; } }
+@media all and (max-width: 576px) {
+  #deleteMobile {
+    display: none; } }
+
+/*# sourceMappingURL=forum.css.map */

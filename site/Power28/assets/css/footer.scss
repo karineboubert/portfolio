@@ -1,0 +1,47 @@
+@import "_vars.scss";
+
+footer{
+  padding: 20px 0;
+}
+
+.logoPower{
+  width: 45%;
+}
+
+#icons i {
+  font-size: 30px;
+  color: black;
+  padding: 30px 18px;
+}
+
+@media (min-width:2000px){
+   .rep{
+    font-size: 30px;
+  }
+  #icons i{
+    font-size: 60px;
+  }
+}
+
+@media all and (max-width:768px){
+
+  .logoPower{
+    width: 25%;
+  }
+
+  .respPad{
+    padding: 20px 0;
+  }
+
+  #icons i {
+    font-size: 40px;
+  }
+}
+
+@media all and (max-width:425px){
+  .respPad{
+    padding: 20px 15px;
+  }
+
+}
+

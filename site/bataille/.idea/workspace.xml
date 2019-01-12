@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="de362746-4c88-4d3d-9a13-1ca6142380d4" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/../../calculator-exam/tests/app/Calculator/Addition.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../calculator-exam/tests/app/Calculator/Calculator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../calculator-exam/tests/app/Calculator/Exceptions/IncorrectOperandsException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../calculator-exam/tests/app/Calculator/Exceptions/NoOperandsException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../calculator-exam/tests/app/Calculator/OperationAbstract.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../calculator-exam/tests/app/Calculator/OperationInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../calculator-exam/tests/app/Calculator/Substraction.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dev2/dev front/ProjectManagement/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dev2/mini-framework/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dev2/recipe/app/Views/includes/scripts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dev2/recipe/app/Views/layout/default.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dev2/revisions/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dev2/revisions/app/Contracts/ModelInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dev2/revisions/app/Exceptions/InvalidNumberException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dev2/revisions/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dev2/revisions/public/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../recipe/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../recipe/app/Views/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../recipe/app/assets/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../recipe/app/assets/js/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../recipe/composer.json" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assets/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="23">
+              <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/js/script.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1610">
+              <caret line="70" column="26" lean-forward="true" selection-start-line="70" selection-start-column="26" selection-end-line="70" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="414">
+              <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>match</find>
+      <find>Nombre</find>
+      <find>recover</find>
+      <find>recoverTurn</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/script.js" />
+        <option value="$PROJECT_DIR$/style.css" />
+        <option value="$PROJECT_DIR$/assets/js/script2.js.css" />
+        <option value="$PROJECT_DIR$/assets/js/test.js" />
+        <option value="$PROJECT_DIR$/assets/js/script2.js" />
+        <option value="$PROJECT_DIR$/assets/js/script.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/assets/css/style.css" />
+      </list>
+    </option>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="813" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="de362746-4c88-4d3d-9a13-1ca6142380d4" name="Default" comment="" />
+      <created>1542699172007</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1542699172007</updated>
+      <workItem from="1542699173667" duration="37760000" />
+      <workItem from="1542907637818" duration="14830000" />
+      <workItem from="1542991585071" duration="16919000" />
+      <workItem from="1543152250191" duration="15238000" />
+      <workItem from="1543221969189" duration="10119000" />
+      <workItem from="1543250052066" duration="8429000" />
+      <workItem from="1543262176575" duration="65000" />
+      <workItem from="1543262470338" duration="1578000" />
+      <workItem from="1543295551536" duration="1171000" />
+      <workItem from="1543304990816" duration="2557000" />
+      <workItem from="1543475337035" duration="157000" />
+      <workItem from="1543511178232" duration="128000" />
+      <workItem from="1543755442832" duration="1093000" />
+      <workItem from="1543766284274" duration="294000" />
+      <workItem from="1543767830646" duration="305000" />
+      <workItem from="1544518204748" duration="661000" />
+      <workItem from="1544532346280" duration="215000" />
+      <workItem from="1545073567656" duration="719000" />
+      <workItem from="1545110447216" duration="3787000" />
+      <workItem from="1545155677224" duration="176000" />
+      <workItem from="1546564350180" duration="1199000" />
+      <workItem from="1546601694069" duration="598000" />
+      <workItem from="1546728042086" duration="1783000" />
+      <workItem from="1547216180422" duration="985000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="120766000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" weight="0.3469242" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32889965" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="11" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/script.js" />
+    <entry file="file://$PROJECT_DIR$/style.css" />
+    <entry file="file://$PROJECT_DIR$/assets/js/test.js" />
+    <entry file="file://$PROJECT_DIR$/../application/index.php" />
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1610">
+          <caret line="70" column="26" lean-forward="true" selection-start-line="70" selection-start-column="26" selection-end-line="70" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

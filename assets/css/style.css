@@ -1,0 +1,155 @@
+body{
+    padding: 0;
+    margin:0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background: url(../img/background3.jpg) no-repeat 50% 50%;
+    background-size: cover;
+
+}
+
+.logo {
+    line-height: 60px;
+    position: fixed;
+    float: left;
+    margin: 16px 46px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    line-height: 60px;
+}
+
+nav ul {
+    line-height: 60px;
+    list-style: none;
+    background: rgba(0, 0, 0, 0);
+    overflow: hidden;
+    color: #fff;
+    padding: 0 40px 0 0;
+    text-align: right;
+    margin: 0;
+    transition: 1s;
+    z-index:1;
+}
+
+nav.black ul {
+    color: #fff;
+    background: #000;
+
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 1% 3%;;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+main{
+    height: 100vh;
+}
+
+.containPresentation{
+    text-align: center;
+    background-color: white;
+    padding: 5% 5%;
+    border-radius: 5px;
+    opacity: 0.9;
+}
+
+.menu-icon {
+    line-height: 60px;
+    width: 100%;
+    background: #000;
+    text-align: right;
+    box-sizing: border-box;
+    padding: 15px 24px;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+}
+
+
+.project{
+
+}
+
+.projectContent{
+    margin: 2% 10%;
+}
+.card{
+    padding: 0;
+    margin: 0 2%;
+    border-radius: 0;
+    box-shadow: 0px 0px 5px 1px rgba(194, 194, 194, 0.72);
+    -moz-box-shadow: 0px 0px 5px 1px rgba(194, 194, 194, 0.72);
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(194, 194, 194, 0.72);
+}
+.card-img-top{
+    border-bottom: 1px solid grey ;
+}
+
+.link{
+    color: cornflowerblue;
+}
+
+.git{
+    float:right;
+    text-decoration: underline;
+    color: black;
+}
+
+a:visited{
+    color:black;
+}
+
+
+@media(max-width: 786px) {
+
+    .logo {
+        position: fixed;
+        top: 0;
+        margin-top: 16px;
+    }
+
+    nav ul {
+        max-height: 0px;
+        background: #000;
+    }
+
+    nav.black ul {
+        background: #000;
+    }
+
+    .showing {
+        max-height: 34em;
+    }
+
+    nav ul li {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 24px;
+        text-align: center;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+}
+
+

@@ -1,0 +1,14 @@
+.navbar-light{
+    background-color: white;
+}
+
+#logo{
+    width: 250px;
+}
+
+@media all and (max-width:425px){
+    #logo{
+        width: 200px;
+    }
+}
+

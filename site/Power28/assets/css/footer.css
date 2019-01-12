@@ -1,0 +1,56 @@
+.nomargin {
+  margin: 0; }
+
+.nopadding {
+  padding: 0; }
+
+.padding {
+  padding: 40px 0; }
+
+.banner {
+  background-color: black;
+  padding: 15px 20px;
+  font-weight: 600;
+  color: white; }
+
+.borderBlack {
+  border: 3px solid black; }
+
+.center {
+  text-align: center; }
+
+.bold {
+  font-weight: 600;
+  color: black; }
+
+footer {
+  padding: 20px 0; }
+
+.logoPower {
+  width: 45%; }
+
+#icons i {
+  font-size: 30px;
+  color: black;
+  padding: 30px 18px; }
+
+@media (min-width: 2000px) {
+  .rep {
+    font-size: 30px; }
+
+  #icons i {
+    font-size: 60px; } }
+@media all and (max-width: 768px) {
+  .logoPower {
+    width: 25%; }
+
+  .respPad {
+    padding: 20px 0; }
+
+  #icons i {
+    font-size: 40px; } }
+@media all and (max-width: 425px) {
+  .respPad {
+    padding: 20px 15px; } }
+
+/*# sourceMappingURL=footer.css.map */

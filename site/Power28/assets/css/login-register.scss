@@ -1,0 +1,38 @@
+@import "_vars.scss";
+
+body{
+  @include body;
+  background-image: url("../../assets/img/brick.png");
+  background-attachment: fixed;
+  background-size: 100%;
+}
+
+.block {
+  background-color: white;
+  padding: 50px;
+  margin: 100px 0;
+  @include priceCard;
+}
+
+.logoPower28{
+  width: 35%;
+  height: auto;
+}
+
+.nav-tabs .nav-link.active{
+  color: white;
+  background-color: #D1D1CF;
+}
+
+.blackButton{
+  @include blackButton;
+  color: white;
+  padding: 10px 60px;
+}
+
+@media all and (max-width:768px){
+  .blackButton{
+    padding: 20px 40px;
+    font-size: 20px;
+  }
+}

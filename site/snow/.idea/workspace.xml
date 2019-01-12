@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5d17e17f-d99d-477a-a38f-d2c375d59c0a" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/../../calculator-exam/tests/app/Calculator/Addition.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../calculator-exam/tests/app/Calculator/Calculator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../calculator-exam/tests/app/Calculator/Exceptions/IncorrectOperandsException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../calculator-exam/tests/app/Calculator/Exceptions/NoOperandsException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../calculator-exam/tests/app/Calculator/OperationAbstract.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../calculator-exam/tests/app/Calculator/OperationInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../calculator-exam/tests/app/Calculator/Substraction.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dev2/dev front/ProjectManagement/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dev2/mini-framework/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dev2/recipe/app/Views/includes/scripts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dev2/recipe/app/Views/layout/default.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dev2/revisions/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dev2/revisions/app/Contracts/ModelInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dev2/revisions/app/Exceptions/InvalidNumberException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dev2/revisions/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../dev2/revisions/public/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../recipe/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../recipe/app/Views/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../recipe/app/assets/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../recipe/app/assets/js/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../recipe/composer.json" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileColors">
+    <fileColor scope="Non-Project Files (Material Default)" color="2E3C43" />
+    <fileColor scope="Non-Project Files (Material Darker)" color="323232" />
+    <fileColor scope="Non-Project Files (Material Lighter)" color="eae8e8" />
+    <fileColor scope="Non-Project Files (Material Palenight)" color="2f2e43" />
+  </component>
+  <component name="FileEditorManager">
+    <splitter split-orientation="horizontal" split-proportion="0.66032416">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/index.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="137">
+                  <caret line="54" column="83" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="83" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/skill.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1334">
+                  <caret line="58" column="40" lean-forward="true" selection-start-line="58" selection-start-column="40" selection-end-line="58" selection-end-column="40" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/assets/css/style.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="23">
+                  <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/assets/css/skill.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="69">
+                  <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/create.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="24">
+                  <caret line="46" column="21" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/style.css.js" />
+        <option value="$PROJECT_DIR$/style.css" />
+        <option value="$PROJECT_DIR$/assets/css/skills.html" />
+        <option value="$PROJECT_DIR$/../bootstrap/skill.html" />
+        <option value="$PROJECT_DIR$/../bootstrap/skill.css" />
+        <option value="$PROJECT_DIR$/../bootstrap/digital.css" />
+        <option value="$PROJECT_DIR$/../bootstrap/digital.html" />
+        <option value="$PROJECT_DIR$/../bootstrap/homepage.css" />
+        <option value="$PROJECT_DIR$/assets/css/think.html" />
+        <option value="$PROJECT_DIR$/thinks.css" />
+        <option value="$PROJECT_DIR$/assets/css/thinks.css" />
+        <option value="$PROJECT_DIR$/create.css" />
+        <option value="$PROJECT_DIR$/digital.css" />
+        <option value="$PROJECT_DIR$/experience.css" />
+        <option value="$PROJECT_DIR$/index2.html" />
+        <option value="$PROJECT_DIR$/assets/css/think.css" />
+        <option value="$PROJECT_DIR$/assets/css/experience.css" />
+        <option value="$PROJECT_DIR$/skill.html" />
+        <option value="$PROJECT_DIR$/assets/css/digital.css" />
+        <option value="$PROJECT_DIR$/assets/css/create.css" />
+        <option value="$PROJECT_DIR$/assets/css/style.css" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/think.html" />
+        <option value="$PROJECT_DIR$/create.html" />
+        <option value="$PROJECT_DIR$/digital.html" />
+        <option value="$PROJECT_DIR$/experience.html" />
+        <option value="$PROJECT_DIR$/assets/css/skill.css" />
+      </list>
+    </option>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="817" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="snow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="snow" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="snow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="snow" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="snow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="snow" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="settings.javascript.linters.jscs" />
+    <property name="node.js.path.for.package.jscs" value="project" />
+    <property name="node.js.selected.package.jscs" value="" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5d17e17f-d99d-477a-a38f-d2c375d59c0a" name="Default" comment="" />
+      <created>1516112178643</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1516112178643</updated>
+      <workItem from="1516112179922" duration="1107000" />
+      <workItem from="1516113820670" duration="342000" />
+      <workItem from="1516119831026" duration="28026000" />
+      <workItem from="1516622556449" duration="4000" />
+      <workItem from="1516622562577" duration="13490000" />
+      <workItem from="1516647901140" duration="44240000" />
+      <workItem from="1539588066838" duration="1000" />
+      <workItem from="1547215382166" duration="538000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="87748000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24892704" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/style.css.js" />
+    <entry file="file://$PROJECT_DIR$/style.css" />
+    <entry file="file://$PROJECT_DIR$/../bootstrap/skill.html" />
+    <entry file="file://$PROJECT_DIR$/assets/css/skills.html" />
+    <entry file="file://$PROJECT_DIR$/../cdiscount/index copie.html" />
+    <entry file="file://$PROJECT_DIR$/../bootstrap/blog.html" />
+    <entry file="file://$PROJECT_DIR$/../bootstrap/skill.css" />
+    <entry file="file://$PROJECT_DIR$/../bootstrap/digital.css" />
+    <entry file="file://$PROJECT_DIR$/../bootstrap/digital.html" />
+    <entry file="file://$PROJECT_DIR$/../bootstrap/homepage.css" />
+    <entry file="file://$PROJECT_DIR$/homepage.html" />
+    <entry file="file://$PROJECT_DIR$/assets/css/think.html" />
+    <entry file="file://$PROJECT_DIR$/thinks.css" />
+    <entry file="file://$PROJECT_DIR$/assets/css/thinks.css" />
+    <entry file="file://$PROJECT_DIR$/create.css" />
+    <entry file="file://$PROJECT_DIR$/digital.css" />
+    <entry file="file://$PROJECT_DIR$/experience.css" />
+    <entry file="file://$PROJECT_DIR$/assets/css/style2.css" />
+    <entry file="file://$PROJECT_DIR$/index2.html" />
+    <entry file="file://$USER_HOME$/WebstormProjects/zoom/project1.css" />
+    <entry file="file://$PROJECT_DIR$/assets/css/experience.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="47" selection-start-line="47" selection-end-line="76" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/create.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="80" selection-start-line="80" selection-end-line="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/digital.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="60" selection-start-line="60" selection-end-line="79" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digital.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="42" column="64" selection-start-line="42" selection-start-column="64" selection-end-line="42" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experience.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="492">
+          <caret line="43" column="64" selection-start-line="43" selection-start-column="64" selection-end-line="43" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/think.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="49" selection-start-line="49" selection-end-line="54" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/think.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="587">
+          <caret line="38" column="64" selection-start-line="38" selection-start-column="64" selection-end-line="38" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="54" column="83" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/create.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="46" column="21" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/todo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-331" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/animate.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skill.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1334">
+          <caret line="58" column="40" lean-forward="true" selection-start-line="58" selection-start-column="40" selection-end-line="58" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/skill.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

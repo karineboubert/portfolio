@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Jeux de carte</title>
+
+</head>
+</br></br>
+<h1> Jeux de bataille</h1>
+
+<img class="cartGame" src="assets/img/cartgame.png">
+<img id="cartRight" class="cartGame" src="assets/img/cartgame.png">
+
+<h2 id="question">Voulez-vous être <span id="pawnBlack"><i class="fas fa-user"></i></span> ou <span id="pawnWhite"><i class="far fa-user"></i></span></h2>
+<h2 id="totalMatch"> Total Match :  <span id="matchTotalPlayer1"></span> / <span id="matchTotalPlayer2"></span>  </h2>
+<h3 id="displayWin"></h3>
+</br>
+<div class="center">
+    <input id="reset" type="button" value="Prochaine partie">
+</div>
+
+
+    <div class="presentation">
+        <div class="column">
+            <div class="row">
+                <div  id="player1"> </div>
+                <div id="scorePlayer1"></div>
+            </div></br>
+            <div id="gamePlayer1"><img src="assets/img/BACK.png"></div>
+        </div>
+
+        <div class="column">
+            <div class="row">
+                <div  id="player2"> </div>
+                <div id="scorePlayer2"></div>
+            </div></br>
+            <div id="gamePlayer2"><img src="assets/img/BACK.png"></div>
+        </div>
+    </div>
+
+    <div class="displayCard">
+        <div class="card" id="playerCard"></div>
+        <div class="card" id="playerCard2"></div>
+    </div>
+
+
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>

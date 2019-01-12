@@ -1,0 +1,96 @@
+//padding and margin
+$nopadding: 0;
+$nomargin: 0;
+$paddingSpace: 40px 0;
+
+.nomargin{
+  margin: $nomargin;
+}
+
+.nopadding{
+  padding: $nopadding;
+}
+
+.padding{
+  padding: $paddingSpace ;
+}
+
+@mixin body(){
+  margin: $nomargin;
+  padding: $nopadding;
+  font-family: 'Montserrat', sans-serif;
+}
+
+//card and banner
+
+@mixin banner(){
+  background-color: black;
+  padding: 15px 20px;
+  font-weight:600;
+  color: white;
+}
+
+.banner{
+  @include banner;
+}
+
+@mixin priceCard($marginCard: 30px 0,$paddingCard:40px 30px){
+  margin:$marginCard ;
+  padding:$paddingCard;
+  background-color: #f9f9f9;
+  box-shadow: 1px 1px 13px 3px rgba(188, 188, 187, 0.75);
+  -moz-box-shadow: 1px 1px 13px 3px rgba(188, 188, 187, 0.75);
+  -webkit-box-shadow: 1px 1px 13px 3px rgba(188, 188, 187, 0.75);
+}
+
+//button
+
+@mixin blackButton($buttonPad:10px 30px){
+  background-color: black;
+  border: black;
+  border-radius: 3px;
+  padding: $buttonPad;
+}
+
+//background
+
+@mixin bannerGrey(){
+  background-color: #D1D1CF;
+  text-align: center;
+}
+
+//border
+$borderBlack: 3px solid black;
+
+.borderBlack{
+  border:$borderBlack;
+}
+
+//text
+@mixin textJustify(){
+  font-size: 12px;
+  text-align: justify;
+}
+
+$center: center;
+
+.center{
+  text-align: $center;
+}
+
+//weight
+
+@mixin bold(){
+  font-weight: 600;
+  color: black;
+}
+
+.bold{
+  @include bold;
+}
+
+//size
+$w100: 100%;
+$w65: 65%;
+$auto: auto;
+

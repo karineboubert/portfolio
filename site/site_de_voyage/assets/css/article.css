@@ -1,0 +1,173 @@
+body{
+    margin:0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+.margin{
+    margin-top: 30px;
+}
+
+.research-filter{
+    margin: 20px 0;
+}
+
+.research{
+    background-color: #7AC4C9;
+    padding: 30px 0;
+    text-align: center;
+    color: white;
+    margin-left: 20px;
+}
+
+.padding {
+    padding-top: 20px;
+}
+
+h2{
+    text-decoration: underline;
+}
+
+label{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.search, .filterbutton{
+    margin-top: 30px;
+    background-color: white;
+}
+
+
+
+.filter{
+    background-color:#3f4144;
+    margin: 30px 0 30px 20px;
+    padding: 20px 0;
+    color: white;
+    font-size: 20px;
+}
+
+
+.fw-blue{
+    background-color:#3f4144;
+}
+
+.center{
+    text-align: center;
+    color:#7AC4C9;
+}
+
+.form-control{
+    border: none;
+    border-radius: 0;
+}
+
+.travel{
+    height: 200px;
+    margin: 20px 0;
+}
+
+.card-img-top{
+    width: 50%;
+    height: 100%;
+}
+
+.price {
+    font-size: 20px;
+    position: absolute;
+    top: 5%;
+    left: 80%;
+    color: #67cce3;
+}
+
+.card-title{
+    margin-top: 35px;
+}
+
+h5{
+    font-size: 15px;
+}
+
+.btn{
+    border-radius: 0;
+}
+
+.btn-blue{
+    background-color: #7AC4C9;
+    color:white;
+    position: absolute;
+    top:80%;
+    left: 76%;
+    padding: 5px 20px;
+}
+
+.maps{
+    height: 750px;
+    margin: 20px 0;
+    padding: 5px;
+}
+
+#map {
+    height: 100%;
+    width: 95%;
+    border: 3px solid white;
+}
+@media all and (max-width:1024px) {
+
+    .btn-blue{
+        position: absolute;
+        left: 65%;
+    }
+    .price {
+        font-size: 18px;
+        position: absolute;
+        left: 74%;
+
+    }
+    .card-title{
+        margin-top: 20px;
+    }
+}
+
+@media all and (max-width:768px) {
+
+    .maps {
+        display: none;
+    }
+    .btn-blue{
+        position: absolute;
+        left: 70%;
+    }
+    .card-title{
+        margin-top: 30px;
+    }
+}
+
+@media all and (max-width:425px) {
+
+
+    .travel{
+        height: 180px;
+        margin: 20px 0;
+
+    }
+    h4{
+        font-size: 18px;
+    }
+
+    h5{
+        font-size: 12px;
+    }
+
+    .btn-blue{
+        position: absolute;
+        top: 75%;
+        left: 56%;
+    }
+
+    .margin{
+        margin-top: 0;
+    }
+
+}

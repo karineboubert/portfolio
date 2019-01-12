@@ -1,0 +1,88 @@
+body{
+    background-color: #3c7466;
+}
+
+h1{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 40px;
+}
+
+.cartGame{
+    width: 10vw;
+    position: absolute;
+    top:10px;
+}
+
+#cartRight{
+    left: 89%;
+}
+
+#question{
+    font-size: 30px;
+}
+
+#question, #playerCard, #playerCard2, h2, #displayWin{
+    text-align: center;
+}
+
+
+.presentation{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.column {
+    flex-direction: column;
+
+}
+
+.displayCard, .center{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.card{
+    padding: 0 10px;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.pawnBlack, .pawnWhite{
+    padding: 0 5px;
+}
+
+#scorePlayer1, #scorePlayer2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#reset {
+    padding: 10px 20px;
+    font-size: 15px;
+    text-align: center;
+    color: black;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#reset:hover {
+    background-color: rgb(171, 202, 164);
+    color: white;
+}
+
+

@@ -1,0 +1,70 @@
+@import "_vars.scss";
+
+body{
+  @include body;
+  background-image: url("../../assets/img/brick.png");
+  background-attachment: fixed;
+  background-size: 100%;
+
+}
+
+.mentions{
+  background-color: white;
+  padding: 50px;
+  margin: 50px 0;
+  @include priceCard;
+
+    h1{
+      margin-bottom: 40px;
+      text-align: center;
+    }
+    h4{
+      margin-top: 30px;
+      color: #686866;
+      font-weight: bold;
+    }
+  p{
+    padding-left: 10px;
+  }
+}
+
+.logoPower28{
+  width: 10%;
+  height: auto;
+}
+
+.button{
+  @include blackButton;
+  background-color: #D1D1CF;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+@media all and (max-width:576px){
+
+  .mentions{
+    padding: 20px;
+    margin-top: 50px;
+
+    h1{
+      margin-bottom: 28px;
+      text-align: center;
+    }
+
+    h4{
+      font-size: 18px;
+    }
+    p{
+      font-size: 10px;
+    }
+
+  }
+
+  .logoPower28{
+    width: 20%;
+    height: auto;
+  }
+
+
+
+}

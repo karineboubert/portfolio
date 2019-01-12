@@ -1,0 +1,53 @@
+@import "_vars.scss";
+
+body{
+  @include body;
+  background-image: url("../../assets/img/brick.png");
+  background-attachment: fixed;
+  background-size: 100%;
+}
+
+.margin{
+  margin: 10px 20px;
+}
+
+.form{
+  background-color: #D1D1CF;
+  padding: 20px 0;
+}
+
+.comment{
+  @include priceCard;
+  margin: 20px 0;
+  padding: 30px 30px;
+}
+
+.bg{
+  @include priceCard;
+}
+
+
+@media all and (max-width:767px){
+
+  .padding{
+    padding: 20px 0;
+  }
+
+  .borderComments{
+    margin: 20px 0;
+  }
+
+  .direction{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media all and (max-width:340px){
+
+  h2{
+    font-size: 22px;
+  }
+
+
+}

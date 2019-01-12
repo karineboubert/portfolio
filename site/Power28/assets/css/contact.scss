@@ -1,0 +1,214 @@
+@import "_vars.scss";
+
+#team{
+  background-image: url("../../assets/img/team.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 140px 0;
+}
+
+#bgTeam{
+  background-color:black;
+  filter: opacity(80%);
+  width: 780px;
+  height: 360px;
+  margin: 0 auto;
+
+  h1{
+    font-size: 40px;
+  }
+}
+
+.whiteText{
+  color: white;
+}
+
+#teamPicture{
+  width: 90%;
+}
+
+.text{
+  @include textJustify;
+}
+
+.maps{
+  width: 95%;
+  height:300px;
+}
+
+#mapToulouse {
+  height: 100%;
+}
+
+#mapParis{
+  height: $w100;
+}
+
+@mixin contactCard($marginCard: 30px 0,$paddingCard:40px 30px){
+  margin:$marginCard ;
+  padding:$paddingCard;
+  box-shadow: 1px 1px 8px 2px rgba(143, 141, 141, 0.86);
+  -moz-box-shadow: 1px 1px 8px 2px rgba(143, 141, 141, 0.86);
+  -webkit-box-shadow: 1px 1px 8px 2px rgba(143, 141, 141, 0.86);
+}
+
+.contact{
+  width: 80%;
+  @include bannerGrey;
+  @include contactCard;
+  line-height: 2em
+}
+
+.hs {
+  margin: 10px 40px;
+  overflow: hidden;
+  text-align: center;
+  font-weight:300;
+  color: black;
+}
+.hs:before, .hs:after {
+  content: "";
+  display: inline-block;
+  width: 50%;
+  margin: 0 .5em 0 -55%;
+  vertical-align: middle;
+  border-bottom: 2px solid;
+}
+.hs:after {
+  margin: 0 -55% 0 .5em;
+}
+
+.ml{
+  margin-left: 8%;
+}
+
+ a {
+  color:black;
+}
+
+.greyButton{
+  background-color: #D1D1CF;
+  color:black;
+  padding: 10px 30px;
+}
+
+@media (min-width:2000px){
+  #bgTeam{
+    width: 1550px;
+    height: 800px;
+  }
+  h1{
+    font-size: 90px;
+  }
+  .banner h3{
+    font-size: 60px;
+  }
+}
+
+@media all and (max-width:1024px){
+
+  #team{
+    padding: 100px 0;
+  }
+
+  #bgTeam{
+    width: 700px;
+    height: 300px;
+
+    h1{
+      font-size: 40px;
+    }
+  }
+}
+@media all and (max-width:768px){
+
+  #team{
+    padding: 50px 0;
+  }
+
+  #bgTeam {
+    width: 540px;
+    height: 300px;
+
+    h1 {
+      font-size: 25px;
+    }
+  }
+
+  .responsiveSpace{
+    margin: 40px 0;
+    padding: 0 50px;
+  }
+  .address {
+    h5 {
+      font-size: 35px;
+    }
+
+    p {
+      font-size: 22px
+    }
+  }
+
+
+}
+
+@media all and (max-width:600px){
+
+  #team{
+    padding: 40px 0;
+  }
+
+  #bgTeam {
+    width: 340px;
+    height: 160px;
+
+    h1 {
+      font-size: 20px;
+    }
+    h3 {
+      font-size: 15px;
+    }
+  }
+
+  .banner h3{
+    font-size: 25px;
+  }
+
+
+}
+
+@media all and (max-width:575px){
+
+  #deleteMobile{
+    display: none;
+  }
+  #team{
+    padding: 30px 0;
+  }
+
+  #bgTeam {
+    width: 270px;
+    height: 100px;
+
+    h1 {
+      font-size: 19px;
+    }
+  }
+
+  .banner{
+    h3{
+      font-size: 20px;
+    }
+  }
+  .ml{
+    margin-left: 0;
+  }
+
+
+
+}
+
+
+
+
+

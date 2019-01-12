@@ -1,0 +1,96 @@
+@import "_vars.scss";
+
+body{
+  @include body;
+}
+
+.marginbottom{
+  margin-bottom: 40px ;
+}
+
+.paddingSummary{
+  padding-left:12%;
+}
+
+#board, #respboard{
+  width: $w100;
+}
+
+.whiteText{
+  font-size: 20px;
+  color: white;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+  color: black;
+  background-color: white;
+}
+
+.picture {
+  height: $w100;
+}
+
+.borderBlack, .picture{
+  border: $borderBlack;
+}
+
+.shadow{
+  box-shadow: 1px 1px 13px 3px rgba(188, 188, 187, 0.75);
+  -moz-box-shadow: 1px 1px 13px 3px rgba(188, 188, 187, 0.75);
+  -webkit-box-shadow: 1px 1px 13px 3px rgba(188, 188, 187, 0.75);
+  background-color: #f9f9f9;
+}
+
+.descriptive{
+  font-size: 18px;
+  text-align: center;
+  padding: 0 40px;
+}
+
+@media (min-width:2000px){
+
+  .banner h3{
+    font-size: 60px;
+  }
+
+  #respboard{
+    display: none;
+  }
+}
+
+@media all and (min-width:760px){
+  #respboard{
+    display: none;
+  }
+}
+
+@media all and (max-width:768px) {
+  .descriptive {
+    font-size: 18px;
+    text-align: center;
+    padding: 40px 40px;
+  }
+
+  #respboard{
+    display: none;
+  }
+}
+
+@media all and (max-width:576px) {
+  .banner h3{
+    font-size: 25px;
+  }
+
+  #board{
+    display: none;
+  }
+
+  #respboard{
+    display: block;
+  }
+}
+
+
+
+
+

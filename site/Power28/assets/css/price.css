@@ -1,0 +1,154 @@
+.nomargin {
+  margin: 0; }
+
+.nopadding {
+  padding: 0; }
+
+.padding {
+  padding: 40px 0; }
+
+.banner {
+  background-color: black;
+  padding: 15px 20px;
+  font-weight: 600;
+  color: white; }
+
+.borderBlack {
+  border: 3px solid black; }
+
+.center {
+  text-align: center; }
+
+.bold {
+  font-weight: 600;
+  color: black; }
+
+.priceSofware {
+  margin: 30px 0;
+  padding: 40px 30px;
+  background-color: #f9f9f9;
+  box-shadow: 1px 1px 13px 3px rgba(188, 188, 187, 0.75);
+  -moz-box-shadow: 1px 1px 13px 3px rgba(188, 188, 187, 0.75);
+  -webkit-box-shadow: 1px 1px 13px 3px rgba(188, 188, 187, 0.75);
+  padding: 20px 30px; }
+
+.shadow {
+  margin: 30px 0;
+  padding: 40px 30px;
+  background-color: #f9f9f9;
+  box-shadow: 1px 1px 13px 3px rgba(188, 188, 187, 0.75);
+  -moz-box-shadow: 1px 1px 13px 3px rgba(188, 188, 187, 0.75);
+  -webkit-box-shadow: 1px 1px 13px 3px rgba(188, 188, 187, 0.75);
+  margin: 0;
+  padding: 0; }
+
+.checkboxTitle {
+  font-size: 20px; }
+
+marge {
+  padding-left: 20px; }
+
+#software {
+  width: 70%; }
+
+.paddingText {
+  padding: 40px; }
+
+.picture {
+  height: 250px;
+  width: auto; }
+
+.mag30 {
+  margin: 30px 0; }
+
+.descriptive {
+  background-color: #D1D1CF;
+  text-align: center;
+  border-top: 3px solid black;
+  padding: 30px 40px; }
+
+.description {
+  background-color: #D1D1CF;
+  text-align: center;
+  border-top: none; }
+
+#caption {
+  padding: 28px 10px; }
+
+.numbertext {
+  color: black;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0; }
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.column {
+  float: left;
+  width: 25%; }
+
+.demo {
+  opacity: 0.4;
+  border: 3px solid black;
+  width: 100%; }
+
+.active,
+.demo:hover {
+  opacity: 1; }
+
+@media (min-width: 2000px) {
+  .banner h3 {
+    font-size: 60px; }
+
+  h6 {
+    font-size: 20px; } }
+@media all and (max-width: 1200px) {
+  #caption {
+    padding: 46px 10px; } }
+@media all and (max-width: 1024px) {
+  #caption {
+    padding: 47px 10px; } }
+@media all and (max-width: 992px) {
+  .priceCard {
+    padding: 0; } }
+@media all and (max-width: 768px) {
+  .responsive {
+    display: flex;
+    justify-content: center; }
+
+  .responsiveTitle {
+    font-size: 26px; }
+
+  .text {
+    font-size: 14px; }
+
+  #caption {
+    padding: 25px 10px; }
+
+  .priceCard {
+    padding: 40px 30px; } }
+@media all and (max-width: 576px) {
+  .banner h3 {
+    font-size: 25px; }
+
+  .text {
+    font-size: 16px; }
+
+  .column {
+    float: left;
+    width: 50%; }
+
+  .text {
+    font-size: 14px; }
+
+  .modal-content {
+    margin: 20px 20px 20px 0; } }
+@media all and (max-width: 425px) {
+  .banner h3 {
+    font-size: 20px; } }
+
+/*# sourceMappingURL=price.css.map */

@@ -1,0 +1,73 @@
+.nomargin {
+  margin: 0; }
+
+.nopadding {
+  padding: 0; }
+
+.padding {
+  padding: 40px 0; }
+
+.banner {
+  background-color: black;
+  padding: 15px 20px;
+  font-weight: 600;
+  color: white; }
+
+.borderBlack {
+  border: 3px solid black; }
+
+.center {
+  text-align: center; }
+
+.bold {
+  font-weight: 600;
+  color: black; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-image: url("../../assets/img/brick.png");
+  background-attachment: fixed;
+  background-size: 100%; }
+
+.margin {
+  margin: 10px 20px; }
+
+.form {
+  background-color: #D1D1CF;
+  padding: 20px 0; }
+
+.comment {
+  margin: 30px 0;
+  padding: 40px 30px;
+  background-color: #f9f9f9;
+  box-shadow: 1px 1px 13px 3px rgba(188, 188, 187, 0.75);
+  -moz-box-shadow: 1px 1px 13px 3px rgba(188, 188, 187, 0.75);
+  -webkit-box-shadow: 1px 1px 13px 3px rgba(188, 188, 187, 0.75);
+  margin: 20px 0;
+  padding: 30px 30px; }
+
+.bg {
+  margin: 30px 0;
+  padding: 40px 30px;
+  background-color: #f9f9f9;
+  box-shadow: 1px 1px 13px 3px rgba(188, 188, 187, 0.75);
+  -moz-box-shadow: 1px 1px 13px 3px rgba(188, 188, 187, 0.75);
+  -webkit-box-shadow: 1px 1px 13px 3px rgba(188, 188, 187, 0.75); }
+
+@media all and (max-width: 767px) {
+  .padding {
+    padding: 20px 0; }
+
+  .borderComments {
+    margin: 20px 0; }
+
+  .direction {
+    display: flex;
+    flex-direction: column; } }
+@media all and (max-width: 340px) {
+  h2 {
+    font-size: 22px; } }
+
+/*# sourceMappingURL=topic.css.map */

@@ -1,0 +1,77 @@
+body{
+	background-color: #f8f8f8;
+	font-family: Montserrat;
+	font-size: 15px;
+}
+
+.navbar-light{
+	background-color: white;
+}
+
+#logo{
+	width: 250px;
+}
+
+.border{
+	padding: 10px 10px;
+	background-color: #7AC4C9;
+	border: 1px solid #7AC4C9;
+	list-style-type: none;
+
+}
+
+.border a{
+	color: white;
+	text-decoration: none;
+}
+
+.blue{
+	color: #fff;
+	background-color:  #67cce3;
+	border-color:  #67cce3;
+}
+
+.black{
+	color: black;
+	background-color: white;
+	border-color:  #282828;
+}
+
+footer{
+	background-color: #282828;
+
+}
+
+#informations{
+	padding: 30px 20px;
+	margin: 0;
+	color:white;
+
+}
+
+.nomargin{
+	margin: 0;
+}
+
+.about{
+	color:white;
+	line-height: 1.8em;
+}
+
+#icons i {
+	font-size: 30px;
+	color: white;
+	padding: 8px 18px;
+}
+.article-category{
+	color:red;
+}
+
+
+@media all and (max-width:425px){
+	#logo{
+		width: 200px;
+	}
+
+}
+

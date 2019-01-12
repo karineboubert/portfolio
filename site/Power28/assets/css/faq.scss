@@ -1,0 +1,27 @@
+@import "_vars.scss";
+.category{
+  background-color: #D1D1CF;
+  color: white;
+  padding: 10px 30px;
+}
+
+.margin{
+  margin: 30px 0;
+}
+
+.card-answer{
+  background-color: #D1D1CF;
+  border: 2px solid black;
+  padding: 20px 60px;
+}
+
+h5 a{
+  color: black;
+}
+
+@media all and (max-width:576px){
+  .card-answer{
+    padding: 20px 40px;
+  }
+
+}

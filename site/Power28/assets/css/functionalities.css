@@ -1,0 +1,92 @@
+.nomargin {
+  margin: 0; }
+
+.nopadding {
+  padding: 0; }
+
+.padding {
+  padding: 40px 0; }
+
+.banner {
+  background-color: black;
+  padding: 15px 20px;
+  font-weight: 600;
+  color: white; }
+
+.borderBlack {
+  border: 3px solid black; }
+
+.center {
+  text-align: center; }
+
+.bold {
+  font-weight: 600;
+  color: black; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif; }
+
+.marginbottom {
+  margin-bottom: 40px; }
+
+.paddingSummary {
+  padding-left: 12%; }
+
+#board, #respboard {
+  width: 100%; }
+
+.whiteText {
+  font-size: 20px;
+  color: white; }
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: black;
+  background-color: white; }
+
+.picture {
+  height: 100%; }
+
+.borderBlack, .picture {
+  border: 3px solid black; }
+
+.shadow {
+  box-shadow: 1px 1px 13px 3px rgba(188, 188, 187, 0.75);
+  -moz-box-shadow: 1px 1px 13px 3px rgba(188, 188, 187, 0.75);
+  -webkit-box-shadow: 1px 1px 13px 3px rgba(188, 188, 187, 0.75);
+  background-color: #f9f9f9; }
+
+.descriptive {
+  font-size: 18px;
+  text-align: center;
+  padding: 0 40px; }
+
+@media (min-width: 2000px) {
+  .banner h3 {
+    font-size: 60px; }
+
+  #respboard {
+    display: none; } }
+@media all and (min-width: 760px) {
+  #respboard {
+    display: none; } }
+@media all and (max-width: 768px) {
+  .descriptive {
+    font-size: 18px;
+    text-align: center;
+    padding: 40px 40px; }
+
+  #respboard {
+    display: none; } }
+@media all and (max-width: 576px) {
+  .banner h3 {
+    font-size: 25px; }
+
+  #board {
+    display: none; }
+
+  #respboard {
+    display: block; } }
+
+/*# sourceMappingURL=functionalities.css.map */

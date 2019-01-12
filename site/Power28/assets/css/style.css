@@ -1,0 +1,189 @@
+.nomargin {
+  margin: 0; }
+
+.nopadding {
+  padding: 0; }
+
+.padding {
+  padding: 40px 0; }
+
+.banner {
+  background-color: black;
+  padding: 15px 20px;
+  font-weight: 600;
+  color: white; }
+
+.borderBlack {
+  border: 3px solid black; }
+
+.center {
+  text-align: center; }
+
+.bold {
+  font-weight: 600;
+  color: black; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif; }
+
+#home {
+  background-image: url("../../assets/img/brick.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 60px 0; }
+
+#bgHome {
+  background-color: black;
+  filter: opacity(90%);
+  width: 70%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 2px;
+  padding: 30px 0; }
+  #bgHome h1 {
+    font-size: 40px; }
+
+.ipad {
+  width: auto;
+  height: 350px; }
+
+.whiteButton {
+  background-color: white;
+  color: black;
+  padding: 5px 15px;
+  margin: 15px auto; }
+
+.whiteText {
+  color: white; }
+
+#computer-picture, #tablet, #error {
+  width: 100%; }
+
+.text {
+  font-size: 12px;
+  text-align: justify;
+  margin: 0; }
+
+#box {
+  width: 90%; }
+
+.power {
+  width: 65%; }
+
+.title {
+  color: #D1D1CF; }
+
+.titleBlack {
+  color: black; }
+
+.priceCard {
+  margin: 30px 0;
+  padding: 40px 30px;
+  background-color: #f9f9f9;
+  box-shadow: 1px 1px 13px 3px rgba(188, 188, 187, 0.75);
+  -moz-box-shadow: 1px 1px 13px 3px rgba(188, 188, 187, 0.75);
+  -webkit-box-shadow: 1px 1px 13px 3px rgba(188, 188, 187, 0.75); }
+
+.have {
+  font-size: 12px;
+  padding-left: 50px; }
+
+.check {
+  width: auto;
+  height: 20px; }
+
+.blackButton {
+  background-color: black;
+  border: black;
+  border-radius: 3px;
+  padding: 10px 30px;
+  padding: 10px 40px;
+  margin: 20px;
+  color: white; }
+
+.details {
+  padding: 15px 20px; }
+
+.link {
+  background-color: #D1D1CF;
+  border: 3px solid black;
+  border-radius: 5px;
+  margin: 20px 0; }
+
+.navigation, .link {
+  width: 60%; }
+
+.margin {
+  margin: 40px 0; }
+
+.margin404 {
+  margin: 60px 0; }
+
+@media (min-width: 2000px) {
+  .banner h3 {
+    font-size: 60px; }
+
+  .blackButton {
+    padding: 30px 60px;
+    font-size: 30px; } }
+@media all and (max-width: 768px) {
+  .displayNone {
+    display: none; }
+
+  .tabletPadding {
+    padding: 0 30px; }
+
+  .priceCard {
+    padding: 20px 10px; }
+
+  .have {
+    padding-left: 30px; }
+
+  .navigation, .link {
+    width: 70%; }
+
+  .reverse {
+    display: flex;
+    flex-direction: column-reverse; }
+
+  #tablet {
+    width: 80%;
+    margin-bottom: 40px; }
+
+  #error {
+    width: 70%; } }
+@media all and (max-width: 576px) {
+  .tabletPadding {
+    padding: 0 40px; }
+
+  .phonePadding {
+    padding: 0 20px; }
+
+  h5 {
+    font-size: 15px; }
+
+  .banner h3 {
+    font-size: 25px; }
+
+  .padding {
+    padding: 10px 0; }
+
+  .priceCard {
+    margin: 20px; }
+
+  .columnResponsive {
+    display: flex;
+    flex-direction: column; } }
+@media all and (max-width: 425px) {
+  #bgHome h1 {
+    font-size: 30px; }
+
+  .banner h3 {
+    font-size: 20px; }
+
+  .blackButton {
+    margin: 20px 10px; } }
+
+/*# sourceMappingURL=style.css.map */
