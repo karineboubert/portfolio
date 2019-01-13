@@ -23,8 +23,8 @@
       <change afterPath="$PROJECT_DIR$/../../recipe/app/assets/css/style.css" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../recipe/app/assets/js/script.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../recipe/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/skylap/engine/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/site/skylap/engine/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/skylap/engine/public/css/templates/layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/site/skylap/engine/public/css/templates/layout.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,16 +39,9 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="212">
-                  <caret line="79" column="41" selection-start-line="79" selection-start-column="41" selection-end-line="79" selection-end-column="41" />
+                <state relative-caret-position="158">
+                  <caret line="68" column="132" selection-start-line="68" selection-start-column="132" selection-end-line="68" selection-end-column="132" />
                 </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/../incubation/ma-table/assets/css/restaurant.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-1430" />
               </provider>
             </entry>
           </file>
@@ -68,8 +61,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/assets/css/style.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="591">
-                  <caret line="116" column="16" selection-start-line="116" selection-start-column="16" selection-end-line="116" selection-end-column="16" />
+                <state relative-caret-position="255">
+                  <caret line="115" column="26" selection-start-line="115" selection-start-column="26" selection-end-line="115" selection-end-column="26" />
                 </state>
               </provider>
             </entry>
@@ -87,15 +80,20 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>strong</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/assets/js/script.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/assets/css/style.css" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -172,24 +170,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1547324260476</updated>
-      <workItem from="1547324262354" duration="10781000" />
+      <workItem from="1547324262354" duration="13089000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10781000" />
+    <option name="totallyTimeSpent" value="13089000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15307583" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15307583" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32891566" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -225,11 +223,6 @@
     <entry file="file://$PROJECT_DIR$/../incubation/ma-table/assets/css/customer.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/../incubation/ma-table/assets/css/restaurant.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1430" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -237,17 +230,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/../incubation/ma-table/assets/css/restaurant.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="79" column="41" selection-start-line="79" selection-start-column="41" selection-end-line="79" selection-end-column="41" />
-        </state>
+        <state relative-caret-position="-1430" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="591">
-          <caret line="116" column="16" selection-start-line="116" selection-start-column="16" selection-end-line="116" selection-end-column="16" />
+        <state relative-caret-position="255">
+          <caret line="115" column="26" selection-start-line="115" selection-start-column="26" selection-end-line="115" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="68" column="132" selection-start-line="68" selection-start-column="132" selection-end-line="68" selection-end-column="132" />
         </state>
       </provider>
     </entry>

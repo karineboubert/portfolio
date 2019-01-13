@@ -112,8 +112,10 @@ main{
     text-decoration: underline;
     color: black;
 }
-
-a:visited{
+a,.link:visited{
+    color: cornflowerblue;
+}
+a,.git:visited{
     color:black;
 }
 
