@@ -16,18 +16,13 @@ $(window).on("scroll", function() {
 })
 
 //scroll ancrage
-$('a[href^="#project"]').on("click",function(){
-    let the_id = $(this).attr("href");
-    if (the_id === '#') {
-        return;
-    }
-    $('html, body').animate({
-        scrollTop:$(the_id).offset().top
-    }, 'slow');
+
+$('.js-scrollTo').on('click', function() {
+    var page = $(this).attr('href');
+    var speed = 750;
+    $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
     return false;
 });
-
-
 
 
 

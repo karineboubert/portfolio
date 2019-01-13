@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -24,8 +24,8 @@
 
             <div class="menu">
                 <ul>
-                    <li><a href="#about">A propos</a></li>
-                    <li><a href="#project">Mes projets</a></li>
+                    <li><a class="js-scrollTo" href="#about">A propos</a></li>
+                    <li><a class="js-scrollTo" href="#cv">Mes projets</a></li>
                 </ul>
             </div>
         </nav>
@@ -39,7 +39,7 @@
 
     <div id="about" class="d-flex row">
 
-        <img id="picture" class="col-md-5 col-lg-4" src="assets/img/about.jpg">
+        <img id="picture" class="col-md-5 col-lg-4" src="assets/img/about.jpg" alt="about">
 
         <div class="col-md-6 col-lg-7">
             <h2 class="center" data-aos="fade-right" id="margetitle"><u>A PROPOS DE MOI:</u></h2>
@@ -94,12 +94,10 @@
                             </div>
                         </div>
                     </div>
-                    
                 </div>
             </div>
         </div>
     </div>
-
     <br/>
     <div id="project" class="d-flex justify-content-center flex-column ancres">
         <h2 class="ml-5 center" data-aos="fade-right"><u>MES PROJETS:</u></h2>
@@ -153,11 +151,11 @@
 
             <div class="card col-md-10  col-lg-4" data-aos="fade-up" data-aos-delay="200">
                 <img src="assets/img/skylab.jpg" class="card-img-top" alt="...">
-                <h5 class="card-title">Skylab (Incubation)</h5>
+                <h5 class="card-title">Skylap (Incubation)</h5>
                 <div class="card-body">
 
-                    <p class="card-text">Skylab est un site de comparateur de vol.
-                        Ce projet a été réalisé en groupe avec équipe de différents secteurs pendant une nuit d'incubation.
+                    <p class="card-text">Skylap est un site de comparateur de vol.
+                        Ce projet a été réalisé en groupe de différents secteurs pendant une nuit d'incubation.
                         Je devrais créer le front du site avec HTML, SCSS et Twig.
                     </p>
                     <a href="https://github.com/antodup/skylap" class="git" target=_blank >Lien Github</a>
@@ -179,7 +177,6 @@
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
     AOS.init();
