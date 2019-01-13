@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="assets/css/style.css"/>
     <title>Portfolio Karine</title>
 </head>
@@ -23,7 +24,7 @@
 
             <div class="menu">
                 <ul>
-                    <li><a href="#">A propos</a></li>
+                    <li><a href="#about">A propos</a></li>
                     <li><a href="#project">Mes projets</a></li>
                 </ul>
             </div>
@@ -36,19 +37,77 @@
         </main>
     </header>
 
-    <div id="about">
-        <h2 class="ml-5"><u>A propos</u></h2>
+    <div id="about" class="d-flex row">
+
+        <img id="picture" class="col-md-5 col-lg-4" src="assets/img/about.jpg">
+
+        <div class="col-md-6 col-lg-7">
+            <h2 class="center" data-aos="fade-right" id="margetitle"><u>A PROPOS DE MOI:</u></h2>
+
+            <div class="d-flex justify-content-end">
+                <div class="presentation col-lg-8 text-left">
+                    Je me présente je m'appelle Karine Boubert.<br/>
+                    Je suis actuellement en 2ème année de développement Web & Mobile à l'école Webstart.<br/>
+                    <br/>
+                    Les langages que j'utilise sont :
+                    <div class=" m-4 pt-3 pb-3  row d-flex justify-content-around">
+                        <div data-aos="flip-right" data-aos-duration="1000"  class="column">
+                            <i class="fab fa-html5 fa-3x"></i>
+                            <p class="center">HTML</p>
+                        </div>
+                        <div class="column" data-aos="flip-right" data-aos-duration="1000" data-aos-delay="200">
+                            <i class="fab fa-css3-alt fa-3x "></i>
+                            <p class="center">CSS</p>
+                        </div>
+                        <div class="column" data-aos="flip-right" data-aos-duration="1000" data-aos-delay="400">
+                            <i class="fab fa-php fa-3x"></i>
+                            <p class="center">PHP</p>
+                        </div>
+                        <div class=" d-flex flex-column align-items-center" data-aos="flip-right" data-aos-duration="1000" data-aos-delay="600">
+                            <i class="fab fa-js fa-3x"></i>
+                            <p class="center">Javascript</p>
+                        </div>
+                    </div>
+
+                    Je recherche un stage ou une alternance en Front-End. Je suis disponible tous les après-midis après les cours et pendant les vacances scolaires.
+
+                    <div class="mt-5 d-flex justify-content-end">
+                        <a href="" id="cv"  data-toggle="modal" data-target="#exampleModal">
+                            Voir mon CV
+                        </a>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+
+                            <div class="">
+                                <div class="d-flex justify-content-around">
+                                    <div class="pt-0 modal-body">
+                                        <img  id="cvImage" src="assets/img/cv.jpg" alt="cv">
+                                    </div>
+
+                                    <div class=" pt-3 pr-3 d-flex align-items-start">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
     </div>
 
-    <hr/>
-
-    <div id="project" class="d-flex justify-content-center flex-column">
-        <h2 class="ml-5"><u>Mes Projets</u></h2>
+    <br/>
+    <div id="project" class="d-flex justify-content-center flex-column ancres">
+        <h2 class="ml-5 center" data-aos="fade-right"><u>MES PROJETS:</u></h2>
         <div class=" projectContent d-flex justify-content-around">
-            <div class="card col-md-10 col-lg-4">
+            <div class="card col-md-10 col-lg-4" data-aos="fade-up">
                 <img src="assets/img/snow.jpg" class="card-img-top" alt="...">
+                <h5 class="card-title">Snow</h5>
                 <div class="card-body">
-                    <h5 class="card-title">Snow</h5>
                     <p class="card-text">Snow est une représentation d'un template. Le but de ce projet était d'utiliser les flexbox mais aussi de le designer.
                     <br/>Les langages utilisés sont HTML et CSS. </p>
                     <a href="site/snow" class="link" target=_blank>Voir le site</a>
@@ -56,10 +115,10 @@
                 </div>
             </div>
 
-            <div class="card col-md-10 col-lg-4">
+            <div class="card col-md-10 col-lg-4" data-aos="fade-up" data-aos-delay="200" >
                 <img src="assets/img/travelWord.jpg" class="card-img-top" alt="...">
+                <h5 class="card-title">Blog TravelWorld</h5>
                 <div class="card-body">
-                    <h5 class="card-title">Blog TravelWorld</h5>
                     <p class="card-text">TravelWorld est un blog sur les voyages que j'ai effectués.
                         <br/>Ce projet m'a permis d'utiliser le système de gestion de contenu Wordpress. </p><br/>
                     <a href="http://localhost/travelworld/" class="link" target=_blank>Voir le site</a>
@@ -67,10 +126,10 @@
                 </div>
             </div>
 
-            <div class="card col-md-10 col-lg-4" >
+            <div class="card col-md-10 col-lg-4" data-aos="fade-up" data-aos-delay="400" >
                 <img src="assets/img/travelworldEcommerce.jpg" class="card-img-top" alt="...">
+                <h5 class="card-title">E-commerce Travelworld</h5>
                 <div class="card-body">
-                    <h5 class="card-title">E-commerce Travelworld</h5>
                     <p class="card-text">TravelWorld est un e-commerce d'agence de voyages qui permet de réserver des vols et des hôtels.
                         Pour cela, j'ai utilisé HTML, CSS, PHP et la base de données Mysql. </p>
                     <a href="site/site_de_voyage" class="link" target=_blank>Voir le site</a>
@@ -80,10 +139,10 @@
         </div>
 
         <div class=" projectContent d-flex justify-content-around">
-            <div class="card col-md-10  col-lg-4">
+            <div class="card col-md-10  col-lg-4" data-aos="fade-up">
                 <img src="assets/img/power28.jpg" class="card-img-top" alt="...">
+                <h5 class="card-title">Ecommerce Power28</h5>
                 <div class="card-body">
-                    <h5 class="card-title">Ecommerce Power28</h5>
                     <p class="card-text">Power28 est un e-commerce pour vendre un logiciel de gestion de stock multisecteur.
                         Il a été réalisé avec HTML, SCSS, Javascript, Ajax, Php, Mysql et le framework Bootstrap.
                     </p>
@@ -92,22 +151,23 @@
                 </div>
             </div>
 
-            <div class="card col-md-10  col-lg-4">
+            <div class="card col-md-10  col-lg-4" data-aos="fade-up" data-aos-delay="200">
                 <img src="assets/img/skylab.jpg" class="card-img-top" alt="...">
+                <h5 class="card-title">Skylab (Incubation)</h5>
                 <div class="card-body">
-                    <h5 class="card-title">Skylab (Incubation)</h5>
+
                     <p class="card-text">Skylab est un site de comparateur de vol.
                         Ce projet a été réalisé en groupe avec équipe de différents secteurs pendant une nuit d'incubation.
                         Je devrais créer le front du site avec HTML, SCSS et Twig.
                     </p>
-                    <a href="#" class="git" target=_blank >Lien Github</a>
+                    <a href="https://github.com/antodup/skylap" class="git" target=_blank >Lien Github</a>
                 </div>
             </div>
 
-            <div class="card col-md-10 col-lg-4" >
+            <div class="card col-md-10 col-lg-4" data-aos="fade-up" data-aos-delay="400" >
                 <img src="assets/img/bataille.jpg" class="card-img-top" alt="...">
+                <h5 class="card-title">Jeux de Bataille</h5>
                 <div class="card-body">
-                    <h5 class="card-title">Jeux de Bataille</h5>
                     <p class="card-text">Un mini-jeu de bataille. Le principe était de réaliser un jeu multijoueur avec des websockets.
                         Réalisé avec HTML, CSS, le framework Jquery et la base de données Firebase. </p>
                     <a href="site/bataille" class="link" target=_blank>Voir le site</a>
@@ -119,6 +179,11 @@
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
 <script type="text/javascript" src="assets/js/script.js"></script>
 </body>

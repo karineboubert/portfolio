@@ -9,7 +9,10 @@ header {
     height: 100vh;
     background: url(../img/background.jpg) no-repeat 50% 50%;
     background-size: cover;
+}
 
+.center{
+    text-align: center;
 }
 
 .logo {
@@ -84,6 +87,37 @@ main{
     display: none;
 }
 
+#about{
+    margin: 0;
+    background-image: linear-gradient(to right top, #d3d3d3, #dedede, #e9e9e9, #f4f4f4, #ffffff);text-align: center;
+
+}
+
+#picture{
+    padding: 0;
+    height: 90vh;
+}
+
+.presentation{
+    padding: 2% 0;
+    font-size: 1.2rem;
+}
+
+#cvImage{
+    height: 80vh;
+}
+
+#cv:hover{
+    text-decoration: underline;
+    font-size: 1.3rem;
+    transition: 1s;
+}
+
+
+#margetitle{
+    margin: 6% 0;
+}
+
 .projectContent{
     margin: 2% 10%;
 }
@@ -97,6 +131,16 @@ main{
 }
 .card-img-top{
     border-bottom: 1px solid grey ;
+}
+
+.card-title{
+    background-image: linear-gradient(to right top, #d3d3d3, #dedede, #e9e9e9, #f4f4f4, #ffffff);text-align: center;
+    padding: 1rem;
+
+}
+
+.card-body{
+    padding: 0 1.25rem 1.25rem 1.25rem;
 }
 
 .link{
@@ -116,6 +160,7 @@ a,.git:visited{
 }
 
 
+
 @media(max-width: 786px) {
 
     .logo {
@@ -125,7 +170,7 @@ a,.git:visited{
     }
 
     nav ul {
-        max-height: 0px;
+        max-height: 0;
         background: #000;
     }
 
@@ -152,6 +197,8 @@ a,.git:visited{
         margin: 0 5%;
     }
 
+
+
     .projectContent{
         margin: 2% 10%;
         display: flex;
@@ -165,6 +212,10 @@ a,.git:visited{
 }
 
 @media(max-width: 1024px) {
+    .presentation{
+        padding: 5%;
+        font-size: 1.2rem;
+    }
     .projectContent{
         margin: 2% 10%;
         display: flex;
@@ -176,10 +227,21 @@ a,.git:visited{
     }
 }
 
+@media(max-width: 767px) {
+    #picture{
+        display: none;
+    }
+    #cvImage{
+        height: 60vh;
+        width: 90vw;
+    }
+}
+
 @media(max-width: 425px){
    h2{
        font-size: 1.8rem ;
    }
 }
+
 
 
