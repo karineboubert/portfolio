@@ -84,8 +84,6 @@ main{
     display: none;
 }
 
-
-
 .projectContent{
     margin: 2% 10%;
 }
@@ -142,7 +140,7 @@ a,.git:visited{
     nav ul li {
         box-sizing: border-box;
         width: 100%;
-        padding: 24px;
+        padding: 0;
         text-align: center;
     }
 
@@ -150,6 +148,38 @@ a,.git:visited{
         display: block;
     }
 
+    .containPresentation{
+        margin: 0 5%;
+    }
+
+    .projectContent{
+        margin: 2% 10%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .card{
+        padding: 0;
+        margin: 4%;
+    }
+
+}
+
+@media(max-width: 1024px) {
+    .projectContent{
+        margin: 2% 10%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .card{
+        padding: 0;
+        margin: 2%;
+    }
+}
+
+@media(max-width: 425px){
+   h2{
+       font-size: 1.8rem ;
+   }
 }
 
 
