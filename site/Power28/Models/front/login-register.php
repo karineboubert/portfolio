@@ -10,7 +10,7 @@ function login($email, $password){
         $db = dbConnect();
         //on cherche un utilisateur correspondant au couple email / password renseigné
         $query = $db->prepare('SELECT *
-							FROM user
+							FROM kp28_user
 							WHERE email = ? AND password = ?');
         $query->execute( array( $email, hash('md5', $password) ) );
         $user = $query->fetch();
@@ -38,11 +38,11 @@ function register($firstname, $lastname, $company_name, $pseudo, $email, $passwo
     //un enregistrement utilisateur ne pourra se faire que sous certaines conditions
 
     //en premier lieu, vérifier que l'adresse email renseignée n'est pas déjà utilisée
-    $query = $db->prepare('SELECT email FROM user WHERE email = ?');
+    $query = $db->prepare('SELECT email FROM kp28_user WHERE email = ?');
     $query->execute(array($email));
     $userAlreadyExists = $query->fetch();
 
-    $query = $db->prepare('SELECT pseudo FROM user WHERE pseudo = ?');
+    $query = $db->prepare('SELECT pseudo FROM kp28_user WHERE pseudo = ?');
     $query->execute(array($pseudo));
     $pseudoAlreadyExists = $query->fetch();
 
@@ -61,7 +61,7 @@ function register($firstname, $lastname, $company_name, $pseudo, $email, $passwo
 
     }
     else {
-        $query = $db->prepare('INSERT INTO user (firstname, lastname, company_name, pseudo, email, password, address, postcode, city, mobile) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)');
+        $query = $db->prepare('INSERT INTO kp28_user (firstname, lastname, company_name, pseudo, email, password, address, postcode, city, mobile) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)');
         $newUser = $query->execute(
            [
                 $firstname,

@@ -4,11 +4,11 @@ function getTopic( $topicId ){
     $db = dbConnect();
 
     $query = $db->prepare('
-		SELECT topic.*, GROUP_CONCAT(category_forum.name_category) AS categories
-		FROM topic
-		JOIN topic_category ON topic.id = topic_category.topic_id
-		JOIN category_forum ON topic_category.category_id = category_forum.id
-		WHERE topic.id = ? AND topic.is_published = 1
+		SELECT kp28_topic.*, GROUP_CONCAT(category_forum.name_category) AS categories
+		FROM kp28_topic
+		JOIN kp28_topic_category ON kp28_topic.id = kp28_topic_category.topic_id
+		JOIN kp28_category_forum ON kp28_topic_category.category_id = kp28_category_forum.id
+		WHERE kp28_topic.id = ? AND kp28_topic.is_published = 1
 	');
 
     $query->execute( array( $topicId ) );
@@ -21,14 +21,14 @@ function getTopics($limit = false, $categoryId = false){
 
     $db = dbConnect();
 
-    $queryString = 'SELECT topic.*, category_forum.image,name_category
-                    FROM topic 
-                    JOIN topic_category ON topic.id = topic_category.topic_id 
-                    JOIN category_forum ON topic_category.category_id = category_forum.id 
-                    WHERE topic.is_published = 1';
+    $queryString = 'SELECT kp28_topic.*, kp28_category_forum.image,name_category
+                    FROM kp28_topic 
+                    JOIN kp28_topic_category ON kp28_topic.id = kp28_topic_category.topic_id 
+                    JOIN kp28_category_forum ON kp28_topic_category.category_id = kp28_category_forum.id 
+                    WHERE kp28_topic.is_published = 1';
 
     if($categoryId){
-        $queryString .= ' AND topic_category.category_id = :category_id';
+        $queryString .= ' AND kp28_topic_category.category_id = :category_id';
     }
 
     if($limit){
@@ -54,7 +54,7 @@ function getTopics($limit = false, $categoryId = false){
 function sessionUser($userId)
 {
     $db = dbConnect();
-    $query = $db->prepare('SELECT * FROM user WHERE id = ?');
+    $query = $db->prepare('SELECT * FROM kp28_user WHERE id = ?');
     $query->execute(array($userId));
 
     return $query->fetch();
@@ -64,7 +64,7 @@ function addTopic($question, $content, $author){
     if(isset($question) && isset($content) && isset($author) && !empty($question) && !empty($content) && !empty($author)){
 
         $db = dbConnect();
-        $query = $db->prepare('INSERT INTO topic (question, content, author, is_published, created_at) VALUES (?, ?, ?, 1, NOW())');
+        $query = $db->prepare('INSERT INTO kp28_topic (question, content, author, is_published, created_at) VALUES (?, ?, ?, 1, NOW())');
         $newTopic = $query->execute(
             [
                 $question,
@@ -76,7 +76,7 @@ function addTopic($question, $content, $author){
 
         foreach($_POST['categories'] as $category_id) {
 
-            $query = $db->prepare('INSERT INTO topic_category (topic_id, category_id) VALUES (?, ?)');
+            $query = $db->prepare('INSERT INTO kp28_topic_category (topic_id, category_id) VALUES (?, ?)');
             $newTopic = $query->execute([
                 $lastInsertedTopicId,
                 $category_id,
@@ -100,7 +100,7 @@ function addComment($comment, $pseudo, $topic_id, $user_id){
     if(isset($comment) && isset($pseudo) && !empty($comment) && !empty($pseudo)){
 
         $db = dbConnect();
-        $query = $db->prepare('INSERT INTO comment (comment, author, topic_id, user_id, is_published, created_at) VALUES (?, ?, ?, ?, 1, NOW())');
+        $query = $db->prepare('INSERT INTO kp28_comment (comment, author, topic_id, user_id, is_published, created_at) VALUES (?, ?, ?, ?, 1, NOW())');
         $newComment = $query->execute(
             [
                 $comment,
@@ -125,10 +125,13 @@ function addComment($comment, $pseudo, $topic_id, $user_id){
 function getComments($topic_id){
 
     $db = dbConnect();
-    $query = $db->prepare('SELECT * FROM comment WHERE topic_id = ? AND comment.is_published = 1 ');
+    $query = $db->prepare('SELECT * FROM kp28_comment WHERE kp28_topic_id = ? AND kp28_comment.is_published = 1 ');
     $query->execute(array($topic_id));
     return $query->fetchAll();
 }
+
+
+
 
 
 

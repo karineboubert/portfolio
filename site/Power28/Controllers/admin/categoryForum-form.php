@@ -1,5 +1,5 @@
 <?php
-require_once('Models/admin/categoryForum.php');
+require_once('models/admin/categoryForum.php');
 
 if(isset($_POST['save'])){
     save($_POST['name_category']);
@@ -15,4 +15,4 @@ if(isset($_GET['categoryForum_id']) && isset($_GET['action']) && $_GET['action']
     $categoryForum = categoriesForum();
 }
 
-require_once('Views/admin/categoryForum-form.php');
+require_once('views/admin/categoryForum-form.php');

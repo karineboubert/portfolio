@@ -5,7 +5,7 @@
 function adminTopics()
 {
     $db = dbConnect();
-    $query = $db->query('SELECT * FROM topic');
+    $query = $db->query('SELECT * FROM kp28_topic');
     return($query->fetchall());
 }
 
@@ -13,13 +13,13 @@ function adminTopics()
 
 function DeleteTopic($topic_id){
     $db = dbConnect();
-    $query = $db->prepare('DELETE FROM topic WHERE id = ?');
+    $query = $db->prepare('DELETE FROM kp28_topic WHERE id = ?');
     $result = $query->execute(
         [
             $topic_id
         ]
     );
-    $query = $db->prepare('DELETE FROM topic_category WHERE topic_id = ?');
+    $query = $db->prepare('DELETE FROM kp28_topic_category WHERE topic_id = ?');
     $result = $query->execute([
         $topic_id
     ]);
@@ -39,7 +39,7 @@ function DeleteTopic($topic_id){
 function save($question, $content, $author,$is_published){
     $db = dbConnect();
 
-    $query = $db->prepare('INSERT INTO topic (question, content, author, is_published, created_at) VALUES (?, ?, ?, ?, NOW())');
+    $query = $db->prepare('INSERT INTO kp28_topic (question, content, author, is_published, created_at) VALUES (?, ?, ?, ?, NOW())');
     $newTopic = $query->execute(
         [
             $question,
@@ -52,7 +52,7 @@ function save($question, $content, $author,$is_published){
 
     foreach($_POST['categories'] as $category_id) {
 
-        $query = $db->prepare('INSERT INTO topic_category (topic_id, category_id) VALUES (?, ?)');
+        $query = $db->prepare('INSERT INTO kp28_topic_category (topic_id, category_id) VALUES (?, ?)');
         $newTopic = $query->execute([
             $lastInsertedTopicId,
             $category_id,
@@ -73,7 +73,7 @@ function save($question, $content, $author,$is_published){
 function update($question, $content, $author,$is_published, $id){
     $db = dbConnect();
 
-    $query = $db->prepare('UPDATE topic SET
+    $query = $db->prepare('UPDATE kp28_topic SET
   		question = :question,
   		content = :content,
   		author = :author,
@@ -91,7 +91,7 @@ function update($question, $content, $author,$is_published, $id){
             'id' => $id,
         ]
     );
-    $query = $db->prepare('DELETE FROM topic_category WHERE topic_id = ?');
+    $query = $db->prepare('DELETE FROM kp28_topic_category WHERE topic_id = ?');
     $result = $query->execute(
         [
             $id
@@ -99,7 +99,7 @@ function update($question, $content, $author,$is_published, $id){
     );
 /// pour chaque $_POST assigné a $category_id
     foreach($_POST['categories'] as $category_id){
-        $query = $db->prepare('INSERT INTO topic_category (topic_id, category_id) VALUES (?, ?)');
+        $query = $db->prepare('INSERT INTO kp28_topic_category (topic_id, category_id) VALUES (?, ?)');
         $newTopic = $query->execute([
             $id,
             $category_id,
@@ -119,7 +119,7 @@ function update($question, $content, $author,$is_published, $id){
 // afficher  category form
 function categories(){
     $db = dbConnect();
-    $queryCategory = $db->query('SELECT * FROM category_forum');
+    $queryCategory = $db->query('SELECT * FROM kp28_category_forum');
     return $queryCategory->fetchAll();
 }
 
@@ -127,7 +127,7 @@ function categories(){
 function topics(){
     $db = dbConnect();
 
-    $query = $db->prepare('SELECT * FROM topic WHERE id = ?');
+    $query = $db->prepare('SELECT * FROM kp28_topic WHERE id = ?');
     $query->execute(array($_GET['topic_id']));
 
     return $query->fetch();
@@ -135,7 +135,7 @@ function topics(){
 
 function topicCategories(){
     $db = dbConnect();
-    $query = $db->prepare('SELECT category_id FROM topic_category WHERE topic_id = ?');
+    $query = $db->prepare('SELECT category_id FROM kp28_topic_category WHERE topic_id = ?');
     $query->execute(array($_GET['topic_id']));
     return $query->fetchAll();
 }

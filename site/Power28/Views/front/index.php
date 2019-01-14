@@ -156,7 +156,7 @@
     <div id="LearnMore" class="container">
         <div class="row padding">
             <div class="col-sm-12 col-md-4 column padding">
-                <a href="index.php?page=price">
+                <a href="index.php?page=contact">
                     <div class="link mx-auto">
                         <img class="navigation mx-auto d-block" src="assets/img/send.png" alt="send">
                     </div>

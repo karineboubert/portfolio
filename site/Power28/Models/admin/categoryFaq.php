@@ -2,7 +2,7 @@
 function adminCategoryFaq()
 {
     $db = dbConnect();
-    $query = $db->query('SELECT * FROM category_faq');
+    $query = $db->query('SELECT * FROM kp28_category_faq');
     return($query->fetchall());
 }
 
@@ -10,7 +10,7 @@ function adminCategoryFaq()
 
   function DeleteCategoriesFaq($categoryFaq_id){
       $db = dbConnect();
-      $query = $db->prepare('DELETE FROM category_faq WHERE id = ?');
+      $query = $db->prepare('DELETE FROM kp28_category_faq WHERE id = ?');
       $result = $query->execute(
           [
               $categoryFaq_id
@@ -32,7 +32,7 @@ function adminCategoryFaq()
   function save($name_category){
       $db = dbConnect();
 
-      $query = $db->prepare('INSERT INTO category_faq (name_category) VALUES (?)');
+      $query = $db->prepare('INSERT INTO kp28_category_faq (name_category) VALUES (?)');
       $newCategoryFaq = $query->execute(
           [
               $name_category,
@@ -53,7 +53,7 @@ function adminCategoryFaq()
   function update($name_category, $id){
       $db = dbConnect();
 
-      $query = $db->prepare('UPDATE category_faq SET
+      $query = $db->prepare('UPDATE kp28_category_faq SET
   		name_category = :name_category
   		WHERE id = :id'
       );
@@ -81,7 +81,7 @@ function adminCategoryFaq()
     function categoriesFAQ(){
         $db = dbConnect();
 
-        $query = $db->prepare('SELECT * FROM category_faq WHERE id = ?');
+        $query = $db->prepare('SELECT * FROM kp28_category_faq WHERE id = ?');
         $query->execute(array($_GET['categoryFaq_id']));
 
         return $query->fetch();

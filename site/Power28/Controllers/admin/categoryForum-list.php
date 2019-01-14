@@ -1,5 +1,5 @@
 <?php
-require_once('Models/admin/categoryForum.php');
+require_once('models/admin/categoryForum.php');
 
 if(isset($_GET['categoryForum_id']) && isset($_GET['action']) && $_GET['action'] == 'delete'){
 
@@ -7,5 +7,5 @@ if(isset($_GET['categoryForum_id']) && isset($_GET['action']) && $_GET['action']
     $message = DeleteCategoryForum($_GET['categoryForum_id']);
 }
 $categoriesForum = adminForum();
-require_once('Views/admin/categoryForum-list.php');
+require_once('views/admin/categoryForum-list.php');
 

@@ -1,5 +1,5 @@
 <?php
-require_once('Models/admin/comment.php');
+require_once('models/admin/comment.php');
 
 if(isset($_POST['save'])){
     save($_POST['topic_id'], $_POST['user_id'],$_POST['comment'], $_POST['author'], $_POST['is_published']);
@@ -16,4 +16,4 @@ if(isset($_GET['comment_id']) && isset($_GET['action']) && $_GET['action'] == 'e
     $comment = comments();
 }
 
-require_once('Views/admin/comment-form.php');
+require_once('views/admin/comment-form.php');

@@ -1,5 +1,5 @@
 <?php
-require_once('Models/front/user-profile.php');
+require_once('models/front/user-profile.php');
     if(!isset($_SESSION['user'])){
         header('location:index.php');
         exit;
@@ -11,4 +11,4 @@ require_once('Models/front/user-profile.php');
             $updateMessage = update($_POST['firstname'], $_POST['lastname'],$_POST['company_name'], $_POST['pseudo'], $_POST['email'], $_POST['password'], $_POST['password_confirm'], $_POST['address'], $_POST['postcode'],$_POST['city'], $_POST['mobile'],  $user['email'], $user['pseudo'], $_SESSION['user_id']);
         }
     }
-require_once('Views/front/user-profile.php');
+require_once('views/front/user-profile.php');

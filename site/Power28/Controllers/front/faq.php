@@ -1,9 +1,9 @@
 <?php
-require_once('Models/front/faq.php');
+require_once('models/front/faq.php');
 
     $categories = categoriesFAQ();
 
     $questions = questionFAQ();
 
-require_once('Views/front/faq.php');
+require_once('views/front/faq.php');
 ?>

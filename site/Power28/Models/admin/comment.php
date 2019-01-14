@@ -2,7 +2,7 @@
 function adminComment()
 {
     $db = dbConnect();
-    $query = $db->query('SELECT * FROM comment');
+    $query = $db->query('SELECT * FROM kp28_comment');
     return($query->fetchall());
 }
 
@@ -10,7 +10,7 @@ function adminComment()
 
   function DeleteComment($comment_id){
       $db = dbConnect();
-      $query = $db->prepare('DELETE FROM comment WHERE id = ?');
+      $query = $db->prepare('DELETE FROM kp28_comment WHERE id = ?');
       $result = $query->execute(
           [
               $comment_id
@@ -32,7 +32,7 @@ function adminComment()
   function save($topic_id, $user_id, $comment, $author, $is_published){
       $db = dbConnect();
 
-      $query = $db->prepare('INSERT INTO comment (topic_id, user_id, comment, author, is_published, created_at) VALUES (?, ?, ?, ?, ?, NOW())');
+      $query = $db->prepare('INSERT INTO kp28_comment (topic_id, user_id, comment, author, is_published, created_at) VALUES (?, ?, ?, ?, ?, NOW())');
       $newComment = $query->execute(
           [
               $topic_id,
@@ -57,7 +57,7 @@ function adminComment()
   function update($topic_id, $user_id, $comment, $author, $is_published, $id){
       $db = dbConnect();
 
-      $query = $db->prepare('UPDATE comment SET
+      $query = $db->prepare('UPDATE kp28_comment SET
   		topic_id = :topic_id,
   		user_id = :user_id,
   		comment = :comment,
@@ -92,7 +92,7 @@ function adminComment()
     function comments(){
         $db = dbConnect();
 
-        $query = $db->prepare('SELECT * FROM comment WHERE id = ?');
+        $query = $db->prepare('SELECT * FROM kp28_comment WHERE id = ?');
         $query->execute(array($_GET['comment_id']));
 
         return $query->fetch();

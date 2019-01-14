@@ -3,13 +3,13 @@
 function adminForum()
 {
     $db = dbConnect();
-    $query = $db->query('SELECT * FROM category_forum');
+    $query = $db->query('SELECT * FROM kp28_category_forum');
     return($query->fetchall());
 }
 
 function DeleteCategoryForum($forum_id){
     $db = dbConnect();
-    $query = $db->prepare('DELETE FROM category_forum WHERE id = ?');
+    $query = $db->prepare('DELETE FROM kp28_category_forum WHERE id = ?');
     $result = $query->execute(
         [
             $forum_id
@@ -29,7 +29,7 @@ function DeleteCategoryForum($forum_id){
 function save($name_category){
     $db = dbConnect();
 
-    $query = $db->prepare('INSERT INTO category_forum (name_category) VALUES (?)');
+    $query = $db->prepare('INSERT INTO kp28_category_forum (name_category) VALUES (?)');
     $newForumCategory = $query->execute(
         [
             $name_category,
@@ -45,7 +45,7 @@ function save($name_category){
                 $destination = 'assets/img/forum/' . $new_file_name . '.' . $my_file_extension;
                 $result = move_uploaded_file( $_FILES['image']['tmp_name'], $destination);
                 $lastInsertedTopicId = $db->lastInsertId();
-                $query = $db->prepare('UPDATE category_forum SET
+                $query = $db->prepare('UPDATE kp28_category_forum SET
 					image = :image
 					WHERE id = :id'
                 );
@@ -71,7 +71,7 @@ function save($name_category){
 function update($name_category, $id){
     $db = dbConnect();
 
-    $query = $db->prepare('UPDATE category_forum SET
+    $query = $db->prepare('UPDATE kp28_category_forum SET
   		name_category = :name_category
   		WHERE id = :id'
     );
@@ -99,7 +99,7 @@ function update($name_category, $id){
                 $destination = 'assets/img/forum/' . $new_file_name . '.' . $my_file_extension;
                 $result = move_uploaded_file( $_FILES['image']['tmp_name'], $destination);
 
-                $query = $db->prepare('UPDATE category_forum SET
+                $query = $db->prepare('UPDATE kp28_category_forum SET
 					image = :image
 					WHERE id = :id'
                 );
@@ -123,7 +123,7 @@ function update($name_category, $id){
 function categoriesForum(){
     $db = dbConnect();
 
-    $query = $db->prepare('SELECT * FROM category_forum WHERE id = ?');
+    $query = $db->prepare('SELECT * FROM kp28_category_forum WHERE id = ?');
     $query->execute(array($_GET['categoryForum_id']));
 
     return $query->fetch();

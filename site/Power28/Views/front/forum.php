@@ -49,7 +49,7 @@
                         <label for="categories"> Catégories du forum </label>
                         <select class="form-control" name="categories[]" id="categories" multiple="multiple">
                             <?php
-                            $queryCategory = $db->query('SELECT * FROM category_forum');
+                            $queryCategory = $db->query('SELECT * FROM kp28_category_forum');
                             $categories = $queryCategory->fetchAll();
                             ?>
                             <?php foreach ($categories as $key => $category) : ?>

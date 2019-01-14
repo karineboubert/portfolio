@@ -1,5 +1,5 @@
 <?php
-require_once('Models/admin/topic.php');
+require_once('models/admin/topic.php');
 
 if(isset($_GET['topic_id']) && isset($_GET['action']) && $_GET['action'] == 'delete'){
 
@@ -8,5 +8,5 @@ if(isset($_GET['topic_id']) && isset($_GET['action']) && $_GET['action'] == 'del
 }
 $topics = adminTopics();
 
-require_once('Views/admin/topic-list.php');
+require_once('views/admin/topic-list.php');
 

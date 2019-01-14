@@ -3,7 +3,7 @@
 function sessionUser($user_id)
 {
     $db = dbConnect();
-    $query = $db->prepare('SELECT * FROM user WHERE id = ?');
+    $query = $db->prepare('SELECT * FROM kp28_user WHERE id = ?');
     $query->execute(array($user_id));
 //$user contiendra les informations de l'utilisateur dont l'id est en session
     return $query->fetch();
@@ -16,13 +16,13 @@ function update($firstname, $lastname,$company_name, $pseudo, $email, $password,
     //la mise à jour d'un utilisateur ne pourra se faire que sous certaines conditions
 
     //en premier lieu, vérifier que l'adresse email renseignée n'est pas déjà utilisée
-    $query = $db->prepare('SELECT email FROM user WHERE email = ?');
+    $query = $db->prepare('SELECT email FROM kp28_user WHERE email = ?');
     $query->execute(array($email));
 
     //$emailAlreadyExists vaudra false si l'email n'a pas été trouvé, ou un tableau contenant le résultat dans le cas contraire
     $emailAlreadyExists = $query->fetch();
 
-    $query = $db->prepare('SELECT pseudo FROM user WHERE pseudo = ?');
+    $query = $db->prepare('SELECT pseudo FROM kp28_user WHERE pseudo = ?');
     $query->execute(array($pseudo));
     $pseudoAlreadyExists = $query->fetch();
 
@@ -46,7 +46,7 @@ function update($firstname, $lastname,$company_name, $pseudo, $email, $password,
     else {
 
         //début de la chaîne de caractères de la requête de mise à jour
-        $queryString = 'UPDATE user SET firstname = :firstname, lastname = :lastname, company_name = :company_name, pseudo = :pseudo, email = :email, address = :address, postcode = :postcode, city = :city, mobile = :mobile ';
+        $queryString = 'UPDATE kp28_user SET firstname = :firstname, lastname = :lastname, company_name = :company_name, pseudo = :pseudo, email = :email, address = :address, postcode = :postcode, city = :city, mobile = :mobile ';
         //début du tableau de paramètres de la requête de mise à jour
         $queryParameters = [ 'firstname' => $firstname, 'lastname' => $lastname, 'company_name' => $company_name, 'pseudo' => $pseudo, 'email' => $email, 'address' => $address, 'postcode' => $postcode, 'city' => $city, 'mobile' => $mobile, 'id' => $user_id];
 
@@ -75,7 +75,7 @@ function update($firstname, $lastname,$company_name, $pseudo, $email, $password,
             $updateMessage = "Informations mises à jour avec succès !";
 
             //récupération des informations utilisateur qui ont été mises à jour pour affichage
-            $query = $db->prepare('SELECT * FROM user WHERE id = ?');
+            $query = $db->prepare('SELECT * FROM kp28_user WHERE id = ?');
             $query->execute(array($_SESSION['user_id']));
             $user = $query->fetch();
         }

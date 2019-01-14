@@ -3,7 +3,7 @@
 
     function DeleteUser($user_id){
         $db = dbConnect();
-        $query = $db->prepare('DELETE FROM user WHERE id = ?');
+        $query = $db->prepare('DELETE FROM kp28_user WHERE id = ?');
         $result = $query->execute(
             [
                 $user_id
@@ -18,7 +18,7 @@
         }
         return $message;
     }
-    $query = $db->query('SELECT * FROM user');
+    $query = $db->query('SELECT * FROM kp28_user');
     $users = $query->fetchAll();
 
 
@@ -27,7 +27,7 @@
     function save($firstname, $lastname,$company_name, $pseudo, $email, $password, $address, $postcode, $city, $mobile, $is_admin){
         $db = dbConnect();
 
-        $query = $db->prepare('INSERT INTO user (firstname, lastname, company_name, pseudo, email, password, address, postcode, city, mobile, is_admin) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)');
+        $query = $db->prepare('INSERT INTO kp28_user (firstname, lastname, company_name, pseudo, email, password, address, postcode, city, mobile, is_admin) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)');
         $newUser = $query->execute(
             [
                 $firstname,
@@ -88,7 +88,7 @@
 function users(){
     $db = dbConnect();
 
-    $query = $db->prepare('SELECT * FROM user WHERE id = ?');
+    $query = $db->prepare('SELECT * FROM kp28_user WHERE id = ?');
     $query->execute(array($_GET['user_id']));
     return $query->fetch();
 }

@@ -11,7 +11,7 @@
         </div>
         <div class=" col-md-3 d-flex flex-column">
             <h3> Infos pratiques</h3>
-            <a href="Mentions.php" class="about" >Mentions légales </a>
+            <a href="mentions.php" class="about" >Mentions légales </a>
         </div>
         <div class=" col-md-3 d-flex flex-column">
             <h3> Services clients</h3>

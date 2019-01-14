@@ -1,5 +1,5 @@
 <?php
-require_once('Models/front/index.php');
+require_once('models/front/index.php');
 
 if(isset($_GET['logout']) && isset($_SESSION['user'])){
 
@@ -8,4 +8,4 @@ if(isset($_GET['logout']) && isset($_SESSION['user'])){
     unset($_SESSION["user_id"]);
 }
 
-require_once('Views/front/index.php');
+require_once('views/front/index.php');

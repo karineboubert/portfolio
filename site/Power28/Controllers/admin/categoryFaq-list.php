@@ -1,5 +1,5 @@
 <?php
-require_once('Models/admin/categoryFaq.php');
+require_once('models/admin/categoryFaq.php');
 
 if(isset($_GET['categoryFaq_id']) && isset($_GET['action']) && $_GET['action'] == 'delete'){
 
@@ -7,4 +7,4 @@ if(isset($_GET['categoryFaq_id']) && isset($_GET['action']) && $_GET['action'] =
     $message = DeleteCategoryFaq($_GET['categoryFaq_id']);
 }
 $categoriesFaq = adminCategoryFaq();
-require_once('Views/admin/categoryFaq-list.php');
+require_once('views/admin/categoryFaq-list.php');

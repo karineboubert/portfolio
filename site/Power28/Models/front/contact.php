@@ -30,7 +30,7 @@ if(isset($_POST['submit'])){
 function user($userId)
 {
     $db = dbConnect();
-    $query = $db->prepare('SELECT * FROM user WHERE id = ?');
+    $query = $db->prepare('SELECT * FROM kp28_user WHERE id = ?');
     $query->execute(array($userId));
 
     return $query->fetch();

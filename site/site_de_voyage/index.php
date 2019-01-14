@@ -5,9 +5,6 @@ if(isset($_GET['logout']) && isset($_SESSION['users'])){
     unset($_SESSION["admin"]);
 }
 
-
-
-
 ?>
 
 <!DOCTYPE html>
@@ -259,7 +256,7 @@ if(isset($_GET['logout']) && isset($_SESSION['users'])){
 <div class="holiday-choice d-flex justify-content-center  align-items-center">
     <ul class="nav " role="tablist">
         <li class="nav-item block-holiday">
-            <a class="nav-links active " id="recommandation-tab" data-toggle="tab" href="#recommandation" role="tab" aria-controls="recommandation" aria-selected="true"> Recommandations</a>
+            <a class="nav-links active " id="recommandation-tab" data-toggle="tab" href="#recommandation" role="tab" aria-controls="recommandation" aria-selected="true"> Conseillé</a>
         </li>
         <li class="nav-item block-holiday">
             <a class="nav-links black" id="new-tab" data-toggle="tab" href="#new" role="tab" aria-controls="new" aria-selected="false">Nouveautés</a>
@@ -274,7 +271,7 @@ if(isset($_GET['logout']) && isset($_SESSION['users'])){
         <div class="container login ">
             <div class=" row travel-list   ">
                 <?php
-                $query = $db->query('SELECT * FROM indexArticle WHERE hotel_category = 1');
+                $query = $db->query('SELECT * FROM kt_indexArticle WHERE hotel_category = 1');
                 while($indexCard = $query->fetch()):
                     {?>
                         <div class="col-lg-4 col-md-6 cardmarge">
@@ -302,7 +299,7 @@ if(isset($_GET['logout']) && isset($_SESSION['users'])){
         <div class="container login ">
             <div class=" row travel-list   ">
                 <?php
-                $query = $db->query('SELECT * FROM indexArticle WHERE hotel_category = 2');
+                $query = $db->query('SELECT * FROM kt_indexArticle WHERE hotel_category = 2');
                 while($indexCard = $query->fetch()):
                     {?>
                         <div class="col-lg-4 col-md-6 cardmarge">
@@ -331,7 +328,7 @@ if(isset($_GET['logout']) && isset($_SESSION['users'])){
         <div class="container login ">
             <div class=" row travel-list   ">
                 <?php
-                $query = $db->query('SELECT * FROM indexArticle WHERE hotel_category = 3');
+                $query = $db->query('SELECT * FROM kt_indexArticle WHERE hotel_category = 3');
                 while($indexCard = $query->fetch()):
                     {?>
                         <div class="col-lg-4 col-md-6 cardmarge">

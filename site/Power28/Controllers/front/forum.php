@@ -1,7 +1,7 @@
 <?php
 
-require_once('Models/front/topic.php');
-require_once('Models/front/category_forum.php');
+require_once('models/front/topic.php');
+require_once('models/front/category_forum.php');
 
 if(isset($_SESSION['user'])){
     if(isset($_SESSION['user_id'])){
@@ -18,4 +18,5 @@ if(isset($_SESSION['user'])){
 $categoriesForum = getCategoriesForum();
 $topics = getTopics(5);
 
-require_once('Views/front/forum.php');
+require_once('views/front/forum.php');
+

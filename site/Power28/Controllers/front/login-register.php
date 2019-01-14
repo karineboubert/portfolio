@@ -1,5 +1,5 @@
 <?php
-require_once('Models/front/login-register.php');
+require_once('models/front/login-register.php');
 
 if(isset($_SESSION['user'])){
     header('location:index.php');
@@ -23,4 +23,4 @@ else{
 
 }
 
-require_once('Views/front/login-register.php');
+require_once('views/front/login-register.php');

@@ -2,7 +2,7 @@
 if(isset($_GET['page'])) {
 
     if ($_GET['page'] =='functionalities') {
-    require_once('Views/front/functionalities.php');
+    require_once('views/front/functionalities.php');
 
     } elseif ($_GET['page'] == 'contact') {
     require_once('front/contact.php');
@@ -35,7 +35,7 @@ if(isset($_GET['page'])) {
         require_once('front/topic.php');
 
     } elseif ($_GET['page'] == '404') {
-        require_once('Views/front/error404.php');
+        require_once('views/front/error404.php');
     } else {
     require_once('front/index.php');
     }

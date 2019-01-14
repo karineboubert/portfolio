@@ -1,5 +1,5 @@
 <?php
-require_once('Models/admin/faq.php');
+require_once('models/admin/faq.php');
 
 if(isset($_POST['save'])){
     save($_POST['category_id'], $_POST['question'],$_POST['answer'],$_POST['is_published']);
@@ -15,4 +15,4 @@ if(isset($_GET['faq_id']) && isset($_GET['action']) && $_GET['action'] == 'edit'
     $faq = faqs();
 }
 
-require_once('Views/admin/faq-form.php');
+require_once('views/admin/faq-form.php');

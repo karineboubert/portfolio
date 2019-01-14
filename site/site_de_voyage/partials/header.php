@@ -18,7 +18,7 @@
                    <li>
                        <a class="nav-link" href="index.php?logout">Déconnexion</a>
                        <?php else: ?>
-                           <a href="Connexion.php" class="nav-link" >Connexion/ Inscription</a>
+                           <a href="connexion.php" class="nav-link" >Connexion/ Inscription</a>
                    </li>
                 <?php endif; ?>
 
@@ -27,7 +27,7 @@
                     <a href="article.php" class="nav-link" >Recherche</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="cart.php">Mes voyages</a>
+                    <a class="nav-link" href="#">Mes voyages</a>
                 </li>
             </ul>
         </div>

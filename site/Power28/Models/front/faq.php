@@ -6,7 +6,7 @@ function categoriesFAQ(){
 
     $query = $db->prepare('
 		SELECT *
-		FROM category_faq
+		FROM kp28_category_faq
 	');
 
     $query->execute();
@@ -20,7 +20,7 @@ function questionFaq(){
 
     $query = $db->prepare('
 		SELECT *
-		FROM faq
+		FROM kp28_faq
 		WHERE is_published = 1
 	');
 

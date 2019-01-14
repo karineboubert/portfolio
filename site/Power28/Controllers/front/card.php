@@ -1,5 +1,5 @@
 <?php
-require_once('Models/front/card.php');
+require_once('models/front/card.php');
 if(!isset($_SESSION['user'])){
     header('location:index.php?page=login-register');
     exit;
@@ -9,4 +9,4 @@ else {
 
 }
 
-require_once('Views/front/card.php');
+require_once('views/front/card.php');

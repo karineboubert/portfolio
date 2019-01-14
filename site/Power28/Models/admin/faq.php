@@ -3,13 +3,13 @@
 function adminFaqs()
 {
     $db = dbConnect();
-    $query = $db->query('SELECT * FROM faq');
+    $query = $db->query('SELECT * FROM kp28_faq');
     return($query->fetchall());
 }
 
 function DeleteFaq($faq_id){
     $db = dbConnect();
-    $query = $db->prepare('DELETE FROM faq WHERE id = ?');
+    $query = $db->prepare('DELETE FROM kp28_faq WHERE id = ?');
     $result = $query->execute(
         [
             $faq_id
@@ -28,7 +28,7 @@ function DeleteFaq($faq_id){
 function save($category_id, $question, $answer, $is_published){
     $db = dbConnect();
 
-    $query = $db->prepare('INSERT INTO faq (category_id, question, answer is_published) VALUES (?, ?, ?, ?)');
+    $query = $db->prepare('INSERT INTO kp28_faq (category_id, question, answer is_published) VALUES (?, ?, ?, ?)');
     $newFaq = $query->execute(
         [
             $category_id,
@@ -51,7 +51,7 @@ function save($category_id, $question, $answer, $is_published){
 function update($category_id, $question, $answer,$is_published, $id){
     $db = dbConnect();
 
-    $query = $db->prepare('UPDATE faq SET
+    $query = $db->prepare('UPDATE kp28_faq SET
         category_id = :category_id,
   		question = :question,
   		answer = :answer,
@@ -83,7 +83,7 @@ function update($category_id, $question, $answer,$is_published, $id){
 function faqs(){
     $db = dbConnect();
 
-    $query = $db->prepare('SELECT * FROM faq WHERE id = ?');
+    $query = $db->prepare('SELECT * FROM kp28_faq WHERE id = ?');
     $query->execute(array($_GET['faq_id']));
 
     return $query->fetch();

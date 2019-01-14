@@ -1,11 +1,11 @@
 ﻿<?php
 
-$nbUsers = $db->query("SELECT COUNT(*) FROM user")->fetchColumn();
-$nbFaq = $db->query("SELECT COUNT(*) FROM faq")->fetchColumn();
-$nbCategoryFaq = $db->query("SELECT COUNT(*) FROM category_faq")->fetchColumn();
-$nbCategoryForum = $db->query("SELECT COUNT(*) FROM category_forum")->fetchColumn();
-$nbTopic = $db->query("SELECT COUNT(*) FROM topic")->fetchColumn();
-$nbComment = $db->query("SELECT COUNT(*) FROM comment")->fetchColumn();
+$nbUsers = $db->query("SELECT COUNT(*) FROM kp28_user")->fetchColumn();
+$nbFaq = $db->query("SELECT COUNT(*) FROM kp28_faq")->fetchColumn();
+$nbCategoryFaq = $db->query("SELECT COUNT(*) FROM kp28_category_faq")->fetchColumn();
+$nbCategoryForum = $db->query("SELECT COUNT(*) FROM kp28_category_forum")->fetchColumn();
+$nbTopic = $db->query("SELECT COUNT(*) FROM kp28_topic")->fetchColumn();
+$nbComment = $db->query("SELECT COUNT(*) FROM kp28_comment")->fetchColumn();
 
 
 

@@ -1,4 +1,4 @@
 <?php
 
-require_once('Views/front/legalNotice.php');
+require_once('views/front/legalNotice.php');
 ?>

@@ -1,5 +1,5 @@
 <?php
-require_once('Models/admin/topic.php');
+require_once('models/admin/topic.php');
 
 if(isset($_POST['save'])){
     save($_POST['question'],$_POST['content'],$_POST['author'],$_POST['is_published']);
@@ -19,4 +19,4 @@ if(isset($_GET['topic_id']) && isset($_GET['action']) && $_GET['action'] == 'edi
 }
 
 
-require_once('Views/admin/topic-form.php');
+require_once('views/admin/topic-form.php');
