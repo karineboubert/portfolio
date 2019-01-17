@@ -113,6 +113,20 @@ a:hover{
     border: 1px solid black;
 }
 
+@media (min-width:1500px) {
+    #reservation{
+        width: 700px;
+        height: 340px;
+        position: absolute;
+        top:20%;
+        Left: 30%;
+    }
+    .search{
+        padding: 5px 10px;
+        margin: 10px 0 0 530px;
+    }
+}
+
 @media all and (max-width:1024px) {
 
    .d-block{
@@ -124,7 +138,7 @@ a:hover{
         height: 340px;
         position: absolute;
         top:122px;
-        Left: 30px;
+        Left: 15%;
     }
 
     #nav-home{
@@ -137,7 +151,7 @@ a:hover{
     }
 }
 
-@media all and (max-width:425px) {
+@media all and (max-width:766px) {
 
     #carouselExampleIndicators {
         display: none;
